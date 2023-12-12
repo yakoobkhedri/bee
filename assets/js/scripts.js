@@ -68,3 +68,9 @@ filterBtn.forEach((item) => {
     item.querySelector('svg').classList.add('active');
   })
 })
+
+// audio
+
+$(function() {
+  $('audio').audioPlayer();
+});
