@@ -52,6 +52,24 @@ var banner = new Swiper(".banner", {
     el: ".swiper-pagination",
   },
 });
+var products = new Swiper(".products", {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 1,
+  spaceBetween: 34,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // filter
 
@@ -71,6 +89,6 @@ filterBtn.forEach((item) => {
 
 // audio
 
-$(function() {
+$(function () {
   $('audio').audioPlayer();
 });

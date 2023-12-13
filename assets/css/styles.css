@@ -43,8 +43,8 @@ a {
     border: 2px dashed lightgray;
 }
 
-.border-b-dash {
-    border-bottom: 2px dashed #0000000D
+.border-t-dash {
+    border-top: 2px dashed #DDDDDD;
 }
 /* border-radius */
 
@@ -54,6 +54,10 @@ a {
 
 .special-rounded2 {
     border-radius: 21px 50px 50px 21px;
+}
+
+.rounded-bl-0{
+    border-bottom-left-radius: 0px!important;
 }
 
 .rounded-3 {
@@ -562,6 +566,10 @@ a {
     right: 159px;
 }
 
+.-right-257 {
+    right: -257px;
+}
+
 /* left */
 .left-0 {
     left: 0;
@@ -651,7 +659,7 @@ a {
 }
 
 .bg-second {
-    background: #d2e4e3;
+    background: #1B190F;
 }
 
 .bg-second2 {
@@ -755,6 +763,9 @@ a {
 .fs-26 {
     font-size: 26px;
 }
+.fs-36 {
+    font-size: 36px;
+}
 .fs-64{
     font-size: 64px;
 }
@@ -827,6 +838,10 @@ a {
     width: 38px;
 }
 
+.w-40 {
+    width: 40px;
+}
+
 .w-42 {
     width: 42px;
 }
@@ -837,6 +852,10 @@ a {
 
 .w-51 {
     width: 51px;
+}
+
+.w-53 {
+    width: 53px;
 }
 
 .w-55 {
@@ -861,6 +880,10 @@ a {
 
 .w-90 {
     width: 90%;
+}
+
+.w-96 {
+    width: 96%;
 }
 
 .w-98 {
@@ -997,6 +1020,10 @@ a {
     height: 24px;
 }
 
+.h-26 {
+    height: 26px;
+}
+
 .h-30 {
     height: 30px;
 }
@@ -1015,6 +1042,10 @@ a {
 
 .h-38 {
     height: 38px;
+}
+
+.h-40 {
+    height: 40px;
 }
 
 .h-45 {
@@ -1117,6 +1148,10 @@ a {
     height: 184px;
 }
 
+.h-196 {
+    height: 196px;
+}
+
 .h-200 {
     height: 200px;
 }
@@ -1176,6 +1211,10 @@ a {
 
 .-mt-12 {
     margin-top: -12px;
+}
+
+.-mt-71 {
+    margin-top: -71px;
 }
 
 .mt-112 {
@@ -1301,6 +1340,9 @@ a {
 .opacity-80{
     opacity: .8;
 }
+.opacity-92{
+    opacity: .92;
+}
 .visible-none {
     visibility: hidden;
 }
@@ -1403,108 +1445,13 @@ a {
     bottom: -11px;
 }
 
-#productDetails .smallImgs .swiper-slide {
-    width: 44px !important;
-    height: 44px;
-    opacity: 0.3;
-    border-radius: 11px;
-    border: 0.64px solid #BBBBBB
-}
-
-.smallImgs .swiper-slide-thumb-active {
-    opacity: 1;
-    border: 0.64px solid;
-    border-image-source: linear-gradient(74.18deg, #5B6CCC 2.59%, #4834AC 100%);
-}
-
-#pills-tab {
-    background: #4834AC;
-    border-radius: 21px 21px 21px 0px;
-    gap: 17px;
-}
-
-.nav-pills .nav-link {
-    background: #FFFFFF1A;
-    opacity: 30%;
-    color: white;
-    position: relative;
-}
-
-.nav-pills .nav-link.active::after {
-    background-color: #4636a8;
-    content: "";
-    width: 18px;
-    height: 18px;
-    bottom: -22px;
-    border-radius: 5px;
-    position: absolute;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -o-transition: all 0.2s ease 0s;
-    transition: all 0.2s ease 0s;
-    -webkit-transition: all 0.2s ease 0s;
-    -moz-transition: all 0.2s ease 0s;
-}
-
-.nav-pills .nav-link.active {
-    background-color: white;
-    color: black;
-    font-weight: 600;
-    opacity: 100%;
-}
-
-.nav-pills .nav-link path {
-    fill: white;
-}
-
-.nav-pills .nav-link.active path {
-    fill: #27817a;
-}
-
-.filterContent.active {
-    max-height: 1000px;
-    padding: 10px 0 !important;
-}
-
-.filterContent {
+.productLinks{
     max-height: 0;
-    padding: 0 !important;
-    transition: all .4s;
+    overflow: hidden;
 }
-
-.filterBtn svg.active {
-    transform: rotate(180deg);
-  }
-
-.modal {
-    backdrop-filter: blur(3px);
-}
-
-#contactModal .modal-dialog {
-    max-width: 800px;
-}
-
-#contactModal .modal-content {
-    height: 354px;
-}
-
-#addressModal .modal-dialog {
-    max-width: 1007px;
-}
-
-.pagination a:hover,
-.pagination a.active,.filter-nav a:hover,.filter-nav a.active {
-    color: #4834AC;
-}
-
-.pagination a.active,.filter-nav a.active {
-    font-weight: 900;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
+.productSwiperHover:hover .productLinks{
+    max-height: 200px;
+    overflow: visible;
 }
 
 /* header */
@@ -1609,11 +1556,6 @@ input[type="number"] {
     content: url('../img/Vector.svg');
     border-top: 0;
 }
-
-.langMobile .dropdown-toggle::after {
-    content: none;
-}
-
 .dropdown-menu {
     inset: 6px -30px auto 0px !important;
 }
@@ -1869,10 +1811,6 @@ input[type="number"] {
 
     .right-lg-0{
         right: 0;
-    }
-
-    footer .footerMobileMenu svg path {
-        fill: #ffffffbd;
     }
 }
 
