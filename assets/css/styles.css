@@ -175,6 +175,9 @@ a {
 .rounded-t-42 {
     border-radius: 42px 42px 0 0;
 }
+.rounded-45{
+    border-radius: 45px;
+}
 
 /* z index */
 .-z-1 {
@@ -267,7 +270,11 @@ a {
 .text-gray2 {
     color: #bbbbbb;
 }
-
+.text-gray-gradient{
+    background: -webkit-linear-gradient(#555555, rgba(0, 0, 0, 0.89));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .text-lightgray {
     color: lightgray;
 }
@@ -372,6 +379,9 @@ a {
 .-top-97{
     top:-97px
 }
+.-top-88 {
+    top: -88px;
+}
 .-top-83 {
     top: -83px;
 }
@@ -390,6 +400,14 @@ a {
 
 .-top-41 {
     top: -41px;
+}
+
+.top-39 {
+    top: 39px;
+}
+
+.top-37 {
+    top: 37px;
 }
 
 .-top-36 {
@@ -558,6 +576,10 @@ a {
     right: 95px;
 }
 
+.-right-119 {
+    right: -119px;
+}
+
 .right-122 {
     right: 122px;
 }
@@ -597,6 +619,10 @@ a {
 
 .left-34 {
     left: 34px;
+}
+
+.-left-36 {
+    left: -36px;
 }
 
 .-left-47{
@@ -768,6 +794,12 @@ a {
 }
 .fs-64{
     font-size: 64px;
+}
+.fs-82{
+    font-size: 82px;
+}
+.fs-123{
+    font-size: 123px;
 }
 /* min width */
 .min-w-50{
@@ -966,6 +998,10 @@ a {
     width: 362px;
 }
 
+.w-380 {
+    width: 380px;
+}
+
 .w-407 {
     width: 407px;
 }
@@ -976,6 +1012,10 @@ a {
 
 .w-452 {
     width: 452px;
+}
+
+.w-564{
+    width: 564px;
 }
 
 /* height */
@@ -1164,6 +1204,10 @@ a {
     height: 326px;
 }
 
+.h-344{
+    height: 344px;
+}
+
 .h-400 {
     height: 400px;
 }
@@ -1190,6 +1234,9 @@ a {
 
 .h-497 {
     height: 497px;
+}
+.h-564{
+    height: 564px;
 }
 
 /* font weight */
@@ -1249,10 +1296,16 @@ a {
     margin-top: 305px;
 }
 
-/* margin top */
+/* margin bottom */
 
 .mb-235 {
     margin-bottom: 235px;
+}
+
+/* margin right */
+
+.-mr-222{
+    margin-right: -222px;
 }
 
 /* transition */
@@ -1272,8 +1325,15 @@ a {
     transform: rotate(-6deg);
 }
 
-.rotate-6 {
-    transform: rotate(6deg);
+.rotate-10 {
+    transform: rotate(10deg);
+}
+.-rotate-12{
+    transform: rotate(-12deg);
+}
+
+.rotate-17 {
+    transform: rotate(17deg);
 }
 
 .rotate-90 {
@@ -1342,6 +1402,9 @@ a {
 }
 .opacity-92{
     opacity: .92;
+}
+.opacity-100{
+    opacity: 100%;
 }
 .visible-none {
     visibility: hidden;

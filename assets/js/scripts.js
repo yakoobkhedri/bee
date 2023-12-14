@@ -70,6 +70,24 @@ var products = new Swiper(".products", {
     prevEl: ".swiper-button-prev",
   },
 });
+var blog = new Swiper(".blog", {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 1,
+  spaceBetween: 34,
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+    },
+    1200: {
+      slidesPerView: 2.5,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // filter
 
