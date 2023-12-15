@@ -110,3 +110,18 @@ filterBtn.forEach((item) => {
 $(function () {
   $('audio').audioPlayer();
 });
+
+// accordion
+
+let accordionBtn2=Array.from(document.getElementsByClassName('accordion-btn'));
+
+accordionBtn2.forEach((item)=>{
+  item.addEventListener('click',function () {
+    accordionBtn2.forEach((items)=>{
+      items.nextElementSibling.classList.remove('active');
+      items.querySelector('svg').classList.remove('active');
+    });
+    item.nextElementSibling.classList.toggle('active');
+    item.querySelector('svg').classList.toggle('active');
+  })
+})
