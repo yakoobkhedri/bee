@@ -386,6 +386,9 @@ a {
 .-top-97{
     top:-97px
 }
+.-top-96{
+    top:-96px
+}
 .-top-88 {
     top: -88px;
 }
@@ -945,6 +948,9 @@ a {
 .w-85 {
     width: 85%;
 }
+.w-87 {
+    width: 87%;
+}
 .w-90 {
     width: 90%;
 }
@@ -1309,6 +1315,9 @@ a {
 .h-564{
     height: 564px;
 }
+.h-700{
+    height: 700px;
+}
 
 /* font weight */
 .fw-300 {
@@ -1375,6 +1384,9 @@ a {
 
 .mb-235 {
     margin-bottom: 235px;
+}
+.-mb-660 {
+    margin-bottom: -660px;
 }
 
 /* margin right */
@@ -1477,6 +1489,9 @@ a {
 }
 .opacity-92{
     opacity: .92;
+}
+.opacity-96{
+    opacity: .96;
 }
 .opacity-100{
     opacity: 100%;
@@ -2081,11 +2096,6 @@ footer{
         margin-bottom: 193px !important;
     }
 
-    footer .copyRight2,
-    #comment button,
-    #comment .secureCode {
-        width: 100%;
-    }
     .w-lg-100{
         width: 100%;
     }
