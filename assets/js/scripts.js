@@ -77,10 +77,10 @@ var blog = new Swiper(".blog", {
   spaceBetween: 34,
   breakpoints: {
     768: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.7,
     },
     1200: {
-      slidesPerView: 2.5,
+      slidesPerView: 2.7,
     }
   },
   navigation: {
