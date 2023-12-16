@@ -2217,6 +2217,9 @@ footer{
     .fs-sm-40{
         font-size: 40px;
     }
+    .audioplayer {
+        height: 44px!important;
+    }
 
 }
 
