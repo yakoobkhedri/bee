@@ -38,13 +38,9 @@ a {
     overflow-x: hidden;
 }
 
-/* border dash */
-.border-dash {
-    border: 2px dashed lightgray;
-}
-
-.border-t-dash {
-    border-top: 2px dashed #DDDDDD;
+/* border */
+.border-b-main-6{
+    border-bottom: 6px solid #D98614;
 }
 /* border-radius */
 
@@ -55,7 +51,9 @@ a {
 .special-rounded2 {
     border-radius: 21px 50px 50px 21px;
 }
-
+.rounded-tr-0{
+    border-top-right-radius: 0px!important;
+}
 .rounded-bl-0{
     border-bottom-left-radius: 0px!important;
 }
@@ -625,6 +623,10 @@ a {
     left: -15px;
 }
 
+.left-16 {
+    left: 16px;
+}
+
 .left-20 {
     left: 20px;
 }
@@ -704,6 +706,9 @@ a {
 }
 .bg-main-gradient3{
     background-image: linear-gradient(to top, rgba(214, 173, 97, 1), #FFFAF5);
+}
+.bg-main-gradient4{
+    background-color: #D6AD61;
 }
 .bg-main3 {
     background-color: #ececf7;
