@@ -392,6 +392,9 @@ a {
 .-top-88 {
     top: -88px;
 }
+.top-85 {
+    top: 85px;
+}
 .-top-83 {
     top: -83px;
 }
@@ -606,7 +609,9 @@ a {
 .right-122 {
     right: 122px;
 }
-
+.-right-145 {
+    right: -145px;
+}
 .right-159 {
     right: 159px;
 }
@@ -2160,7 +2165,9 @@ footer{
     #mobileMenu::before {
         right: 33px;
     }
-
+    .h-md-auto{
+        height: auto;
+    }
     .category .shadow2 {
         box-shadow: 0px 0px 27.728553771972656px 0px #0000001A;
     }
@@ -2193,7 +2200,9 @@ footer{
     .w-362 .-mt-12 {
         margin-top: -14px;
     }
-
+    .mt-158{
+        margin-top: 0;
+    }
     #pageTitle .right-95 {
         right: 27px;
     }
@@ -2209,7 +2218,9 @@ footer{
     .fs-md-20{
         font-size: 20px;
     }
-    
+    .w-md-91{
+        width: 91%;
+    }
     .black-md{
         color: black!important;
     }
@@ -2239,16 +2250,42 @@ footer{
     #pills-tabContent .max-w-200 {
         max-width: 98px;
     }
-
+    .rounded-l-sm-0{
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
     .w-sm-100{
         width: 100%;
     }
-
+    .w-sm-84{
+        width: 84%;
+    }
+    .w-sm-75{
+        width: 75%;
+    }
+    .w-sm-70{
+        width: 70px;
+    }
+    .h-sm-33{
+        height: 33px;
+    }
+    .fs-sm-10{
+        font-size: 10px;
+    }
+    .fs-sm-11{
+        font-size: 11px;
+    }
+    .fs-sm-13{
+        font-size: 13px;
+    }
     .fs-sm-14{
         font-size: 14px;
     }
     .fs-sm-40{
         font-size: 40px;
+    }
+    .-bottom-sm-17{
+        bottom: -17px;
     }
     .audioplayer {
         height: 44px!important;

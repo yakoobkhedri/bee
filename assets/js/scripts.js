@@ -73,10 +73,10 @@ var products = new Swiper(".products", {
 var blog = new Swiper(".blog", {
   loop: true,
   autoplay: true,
-  slidesPerView: 1,
-  spaceBetween: 34,
+  slidesPerView: 1.3,
+  spaceBetween: 20,
   breakpoints: {
-    768: {
+    992: {
       slidesPerView: 1.7,
     },
     1200: {
