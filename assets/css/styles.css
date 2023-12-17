@@ -1413,7 +1413,9 @@ a {
 }
 
 /* margin bottom */
-
+.-mb-108{
+    margin-bottom: -108px;
+}
 .mb-235 {
     margin-bottom: 235px;
 }
@@ -2129,6 +2131,9 @@ footer{
     .h-lg-auto{
         height: auto;
     }
+    .w-lg-84{
+        width: 84%;
+    }
     .text-lg-black{
         color: black!important;
     }
@@ -2140,7 +2145,13 @@ footer{
     }
 
     .w-lg-100{
-        width: 100%;
+        width: 100%!important;
+    }
+    .fs-lg-40{
+        font-size: 40px;
+    }
+    .fs-lg-79{
+        font-size: 79px;
     }
 }
 
@@ -2195,6 +2206,10 @@ footer{
         width: 0;
         height: 0;
     }
+    .fs-md-20{
+        font-size: 20px;
+    }
+    
     .black-md{
         color: black!important;
     }
