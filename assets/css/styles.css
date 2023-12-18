@@ -2026,7 +2026,9 @@ footer{
     #description .-top-60 {
         top: 0;
     }
-
+    .h-xl-auto{
+        height: auto;
+    }
     #description>div:last-child,
     #comment .flex-grow-1 {
         width: 100%;
@@ -2145,9 +2147,6 @@ footer{
     .rounded-lg-20{
         border-radius: 20px;
     }
-    footer {
-        margin-bottom: 193px !important;
-    }
 
     .w-lg-100{
         width: 100%!important;
@@ -2157,6 +2156,12 @@ footer{
     }
     .fs-lg-79{
         font-size: 79px;
+    }
+    .h-lg-auto{
+        height: auto;
+    }
+    .-mb-lg-466{
+        margin-bottom: -466px;
     }
 }
 
@@ -2280,6 +2285,9 @@ footer{
     }
     .fs-sm-14{
         font-size: 14px;
+    }
+    .fs-sm-28{
+        font-size: 28px;
     }
     .fs-sm-40{
         font-size: 40px;
