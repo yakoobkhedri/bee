@@ -2215,7 +2215,12 @@ footer {
     #about p.text-gray {
         font-size: 12px;
     }
-
+    .productBg{
+        background-image: url('../img/productbg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     #contact .rounded-md-42 {
         border-radius: 32px;
     }
@@ -2452,6 +2457,9 @@ footer {
     .fs-sm-14 {
         font-size: 14px;
     }
+    .fs-sm-16{
+        font-size: 16px;
+    }
 
     .fs-sm-20 {
         font-size: 20px;
@@ -2475,6 +2483,19 @@ footer {
 
     .audioplayer {
         height: 44px !important;
+    }
+    .-top-sm-238{
+        top: -238px;
+    }
+    .top-sm-365{
+        top: 365px;
+    }
+    .right-sm-0{
+        right: 0!important;
+        left: auto!important;
+    }
+    .z-sm-10{
+        z-index: 10;
     }
 
 }
