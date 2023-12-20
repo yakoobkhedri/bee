@@ -977,6 +977,10 @@ a {
     max-width: 507px;
     width: 100%;
 }
+.max-w-690 {
+    max-width: 690px;
+    width: 100%;
+}
 
 
 /* width */
