@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/audioplayer.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <title>سوالات متداول</title>
+</head>
+
+<body>
+
+  <!-- header -->
+
+  <header class="position-relative z-20">
+    <div class="container">
+      <div>
+        <div class="w-100 position-relative">
+          <div class="py-33 px-28 rounded-b-26 d-flex align-items-center justify-content-between bg-main">
+            <!-- hamburger icon -->
+            <div id="hamIcon"
+              class="w-36 h-36 rounded-7 bg-gray d-flex d-xl-none align-items-center justify-content-center cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 7H5" stroke="#E0880F" stroke-width="2" stroke-linecap="round" />
+                <path d="M19 12H9" stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+                <path d="M19 17L5 17" stroke="#E0880F" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <!-- logo -->
+            <a class="d-xl-block d-none" href="index.html"><img alt="logo" src="assets/img/logo.png"
+                class="img-fluid d-block w-126"></a>
+            <a class="d-xl-none d-block" href="index.html"><img alt="logo" src="assets/img/Logo2.png"
+                class="img-fluid d-block w-61"></a>
+            <!-- search products && login -->
+            <div class="d-flex align-items-center gap-3">
+              <form
+                class="d-xl-flex d-none align-items-center gap-2 py-13 px-19 rounded-pill bg-white w-452 flex-shrink-0">
+                <input class="outline-none border-0 fs-14 w-100" placeholder="جستجو در بین محصولات ...">
+                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="26" height="24"
+                  viewBox="0 0 26 24" fill="none">
+                  <ellipse cx="11.9167" cy="11" rx="6.5" ry="6" fill="#E0880F" stroke="#010101" stroke-width="1.2" />
+                  <path
+                    d="M11.9167 8C11.49 8 11.0673 8.0776 10.673 8.22836C10.2787 8.37913 9.92044 8.6001 9.61865 8.87868C9.31686 9.15726 9.07747 9.48797 8.91414 9.85195C8.75081 10.2159 8.66675 10.606 8.66675 11"
+                    stroke="white" stroke-width="1.2" stroke-linecap="round" />
+                  <path d="M21.6667 20L18.4167 17" stroke="#010101" stroke-width="1.2" stroke-linecap="round" />
+                </svg>
+              </form>
+              <!-- login desktop -->
+              <a href="login.html" class="d-xl-flex d-none align-items-center bg-white py-13 px-19 rounded-pill gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <circle cx="12.8008" cy="8.19922" r="4" fill="#222222" />
+                  <path
+                    d="M6.13867 17.5198C6.79975 14.7261 9.57251 13.1992 12.4434 13.1992H13.1582C16.0291 13.1992 18.8018 14.7261 19.4629 17.5198C19.5908 18.0603 19.6925 18.626 19.7497 19.2009C19.8044 19.7504 19.3531 20.1992 18.8008 20.1992H6.80078C6.2485 20.1992 5.7972 19.7504 5.85188 19.2009C5.90908 18.626 6.01075 18.0603 6.13867 17.5198Z"
+                    fill="#E0880F" />
+                </svg>
+                <p class="mb-0 fs-14 fw-medium text-dark">ورود به حساب کاربری</p>
+              </a>
+              <!-- cart mobile -->
+              <div class="d-block d-xl-none">
+                <a href="cart.html"
+                  class="rounded-7 bg-gray w-38 h-38 d-flex align-items-center justify-content-center position-relative">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z"
+                      fill="#E0880F"></path>
+                    <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round"></path>
+                    <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                  </svg>
+                  <!-- cart number -->
+                  <span
+                    class="d-block bg-dark position-absolute text-white d-flex align-items-center justify-content-center pt-1 w-18 h-18 rounded-5 fs-12 text-center -bottom-11 shadow1">12</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-xl-flex d-none justify-content-end gap-3">
+            <div
+              class="rounded-b-26 d-flex flex-grow-1 align-items-center justify-content-between d-xl-block bg-dark position-absolute position-sm-static w-90 end-0 py-3 py-xl-0 px-3 px-xl-0 mx-md-5 mx-4">
+              <!-- menu -->
+              <ul
+                class="d-xl-flex menu d-none align-items-center h-65 justify-content-center gap-5 list-unstyled p-0 mb-0 fs-13 z-10 position-relative">
+                <li class="h-100 d-flex align-items-center"><a href="index.html" class="text-white h-100 d-flex align-items-center">صفحه
+                    اصلی</a></li>
+                <li id="productMenu" class="h-100 d-flex align-items-center">
+                  <a href="products.html" class="text-white d-flex h-100 align-items-center gap-2">
+                    <p class="mb-0">محصولات</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                      <path d="M8.22119 1.51422L4.44977 5.28564L0.678343 1.51422" stroke="white" stroke-width="1.25714"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="h-100 d-flex align-items-center"><a href="contact.html" class="text-white h-100 d-flex align-items-center">تماس
+                    با
+                    ما</a></li>
+                <li class="h-100 d-flex align-items-center"> <a href="about.html"
+                    class="text-white h-100 d-flex align-items-center">درباره
+                    ما</a></li>
+                <li class="h-100 d-flex align-items-center"> <a href="namayandegi.html"
+                    class="text-white h-100 d-flex align-items-center">نمایندگی ها</a></li>
+                <li class="h-100 d-flex align-items-center"> <a href="blog.html"
+                    class="text-white h-100 d-flex align-items-center">بلاگ</a></li>
+                <li class="h-100 d-flex align-items-center"> <a href="info.html"
+                    class="text-white h-100 d-flex align-items-center">راهنما</a></li>
+
+              </ul>
+              <!--  -->
+              <div class="dropdowns d-none d-xl-block py-xl-0 px-4 position-relative z-10">
+                <!-- dropdown 1 -->
+                <ul
+                  class="dropdown2 list-unstyled d-none d-xl-block mt-4 position-relative fs-14 fw-bold z-10 mb-0 px-5 bg-white rounded-18 p-4 end-0 start-0">
+                  <li class="active flex-wrap align-items-center gap-5 position-relative">
+                    <a href="single-product.html" class="text-center text-dark">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block mx-auto w-150">
+                      <p class="mb-0 mt-3">عسل قره چمن</p>
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                      <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                    </svg>
+                    <a href="single-product.html" class="text-center text-dark">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block mx-auto w-150">
+                      <p class="mb-0 mt-3">عسل قره چمن</p>
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                      <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                    </svg>
+                    <a href="single-product.html" class="text-center text-dark">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block mx-auto w-150">
+                      <p class="mb-0 mt-3">عسل قره چمن</p>
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                      <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                    </svg>
+                    <a href="single-product.html" class="text-center text-dark">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block mx-auto w-150">
+                      <p class="mb-0 mt-3">عسل قره چمن</p>
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                      <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                    </svg>
+                    <a href="single-product.html" class="text-center text-dark">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block mx-auto w-150">
+                      <p class="mb-0 mt-3">عسل قره چمن</p>
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1" height="112" viewBox="0 0 1 112" fill="none">
+                      <line opacity="0.1" x1="0.5" y1="2.18557e-08" x2="0.499995" y2="112" stroke="black" />
+                    </svg>
+                    <a href="single-product.html" class="text-center text-dark">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block mx-auto w-150">
+                      <p class="mb-0 mt-3">عسل قره چمن</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-2">
+              <a href="cart.html"
+                class="rounded-20 me-auto bg-main-gradient border-main-gradient w-51 h-51 d-flex align-items-center justify-content-center position-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z"
+                    fill="#E0880F" />
+                  <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round" />
+                  <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round" />
+                </svg>
+                <!-- cart number -->
+                <span
+                  class="d-block bg-dark position-absolute text-white d-flex align-items-center justify-content-center pt-1 w-23 h-23 rounded-5 fs-12 text-center -bottom-15 shadow1">12</span>
+              </a>
+            </div>
+          </div>
+          <!-- mobile menu -->
+          <div id="mobileMenu" class="position-absolute end-0 start-0 d-xl-none rounded-20 mx-4 bg-main-gradient2">
+            <ul class="list-unstyled mb-0 pe-0">
+              <li class="px-3">
+                <a href="index.html" class="d-flex align-items-center gap-2 font-bold text-dark py-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 12.7595C5 11.4018 5 10.7229 5.27446 10.1262C5.54892 9.52943 6.06437 9.08763 7.09525 8.20401L8.09525 7.34687C9.95857 5.74974 10.8902 4.95117 12 4.95117C13.1098 4.95117 14.0414 5.74974 15.9047 7.34687L16.9047 8.20401C17.9356 9.08763 18.4511 9.52943 18.7255 10.1262C19 10.7229 19 11.4018 19 12.7595V16.9999C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 20.9999 16.8856 20.9999 15 20.9999H9C7.11438 20.9999 6.17157 20.9999 5.58579 20.4142C5 19.8284 5 18.8856 5 16.9999V12.7595Z"
+                      fill="#E0880F" />
+                  </svg>
+                  <p class="mb-0">صفحه اصلی</p>
+                </a>
+              </li>
+              <li class="px-3">
+                <div class="d-flex align-items-center justify-content-between cursor-pointer py-4 accordionBtn">
+                  <div class="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <rect x="6" y="10" width="13" height="28" rx="2" fill="#E0880F" />
+                      <path
+                        d="M4.62127 6.51493C4.80316 5.78737 4.8941 5.42359 5.16536 5.21179C5.43663 5 5.8116 5 6.56155 5H17.4384C18.1884 5 18.5634 5 18.8346 5.21179C19.1059 5.42359 19.1968 5.78737 19.3787 6.51493L20.5823 11.3294C20.6792 11.7168 20.7276 11.9104 20.7169 12.0678C20.6892 12.4757 20.416 12.8257 20.0269 12.9515C19.8769 13 19.6726 13 19.2641 13C18.7309 13 18.4644 13 18.2405 12.9478C17.6133 12.8017 17.0948 12.3625 16.8475 11.7678C16.7593 11.5556 16.7164 11.2986 16.6308 10.7846C16.6068 10.6408 16.5948 10.5689 16.5812 10.5499C16.5413 10.4944 16.4587 10.4944 16.4188 10.5499C16.4052 10.5689 16.3932 10.6408 16.3692 10.7846L16.2877 11.2738C16.2791 11.3257 16.2747 11.3516 16.2704 11.3743C16.0939 12.3005 15.2946 12.9777 14.352 12.9995C14.3289 13 14.3026 13 14.25 13C14.1974 13 14.1711 13 14.148 12.9995C13.2054 12.9777 12.4061 12.3005 12.2296 11.3743C12.2253 11.3516 12.2209 11.3257 12.2123 11.2738L12.1308 10.7846C12.1068 10.6408 12.0948 10.5689 12.0812 10.5499C12.0413 10.4944 11.9587 10.4944 11.9188 10.5499C11.9052 10.5689 11.8932 10.6408 11.8692 10.7846L11.7877 11.2738C11.7791 11.3257 11.7747 11.3516 11.7704 11.3743C11.5939 12.3005 10.7946 12.9777 9.85199 12.9995C9.82887 13 9.80258 13 9.75 13C9.69742 13 9.67113 13 9.64801 12.9995C8.70541 12.9777 7.90606 12.3005 7.7296 11.3743C7.72527 11.3516 7.72095 11.3257 7.7123 11.2738L7.63076 10.7846C7.60679 10.6408 7.59481 10.5689 7.58122 10.5499C7.54132 10.4944 7.45868 10.4944 7.41878 10.5499C7.40519 10.5689 7.39321 10.6408 7.36924 10.7846C7.28357 11.2986 7.24074 11.5556 7.15249 11.7678C6.90524 12.3625 6.38675 12.8017 5.75951 12.9478C5.53563 13 5.26905 13 4.73591 13C4.32737 13 4.12309 13 3.97306 12.9515C3.58403 12.8257 3.31078 12.4757 3.28307 12.0678C3.27239 11.9104 3.32081 11.7168 3.41765 11.3294L4.62127 6.51493Z"
+                        fill="#111111" />
+                      <path d="M15 21V17C15 16.4477 14.5523 16 14 16H11C10.4477 16 10 16.4477 10 17V21" stroke="black"
+                        stroke-linecap="square" stroke-linejoin="round" />
+                    </svg>
+                    <p class="mb-0 font-bold">محصولات</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+                  </svg>
+                </div>
+                <ul class="accordionContent list-unstyled mb-0 position-relative">
+                  <li class="border-dash-r-2">
+                    <div
+                      class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                      <a href="single-product.html" class="d-flex align-items-center gap-2 text-dark w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 6 6" fill="none">
+                          <circle cx="3" cy="3" r="3" fill="#E7A242" />
+                        </svg>
+                        <p class="mb-0 fw-bold">عسل 1</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="border-dash-r-2">
+                    <div
+                      class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                      <a href="single-product.html" class="d-flex align-items-center gap-2 text-dark w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 6 6" fill="none">
+                          <circle cx="3" cy="3" r="3" fill="#E7A242" />
+                        </svg>
+                        <p class="mb-0 fw-bold">عسل 2</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="border-dash-r-2">
+                    <div
+                      class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                      <a href="single-product.html" class="d-flex align-items-center gap-2 text-dark w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 6 6" fill="none">
+                          <circle cx="3" cy="3" r="3" fill="#E7A242" />
+                        </svg>
+                        <p class="mb-0 fw-bold">عسل 3</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="border-dash-r-2">
+                    <div
+                      class="d-flex align-items-center position-relative -right-8 justify-content-between cursor-pointer py-3 accordionBtn">
+                      <a href="single-product.html" class="d-flex align-items-center gap-2 text-dark w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 6 6" fill="none">
+                          <circle cx="3" cy="3" r="3" fill="#E7A242" />
+                        </svg>
+                        <p class="mb-0 fw-bold">عسل 4</p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="px-3">
+                <a href="about.html" class="d-flex align-items-center gap-2 font-bold text-dark py-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.17157 6.17157C4 7.34315 4 9.22876 4 13V17V18.5858C4 19.4767 5.07714 19.9229 5.70711 19.2929L7.85355 17.1464C7.92581 17.0742 7.96194 17.0381 8.00788 17.019C8.05383 17 8.10492 17 8.20711 17H14C15.8638 17 16.7956 17 17.5307 16.6955C18.5108 16.2895 19.2895 15.5108 19.6955 14.5307C20 13.7956 20 12.8638 20 11C20 9.13623 20 8.20435 19.6955 7.46927C19.2895 6.48915 18.5108 5.71046 17.5307 5.30448C16.7956 5 15.8638 5 14 5H12C8.22876 5 6.34315 5 5.17157 6.17157Z"
+                      fill="#E0880F" />
+                    <path d="M8.5 9.5L15.5 9.5" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8.5 12.5L13.5 12.5" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <p class="mb-0">درباره ما</p>
+                </a>
+              </li>
+              <li class="px-3">
+                <a href="contact.html" class="d-flex align-items-center gap-2 font-bold text-dark py-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M17.7071 13.7071L20.3552 16.3552C20.7113 16.7113 20.7113 17.2887 20.3552 17.6448C18.43 19.57 15.3821 19.7866 13.204 18.153L11.6286 16.9714C9.88504 15.6638 8.33622 14.115 7.02857 12.3714L5.84701 10.796C4.21341 8.61788 4.43001 5.56999 6.35523 3.64477C6.71133 3.28867 7.28867 3.28867 7.64477 3.64477L10.2929 6.29289C10.6834 6.68342 10.6834 7.31658 10.2929 7.70711L9.27175 8.72825C9.10946 8.89054 9.06923 9.13846 9.17187 9.34373C10.3585 11.7171 12.2829 13.6415 14.6563 14.8281C14.8615 14.9308 15.1095 14.8905 15.2717 14.7283L16.2929 13.7071C16.6834 13.3166 17.3166 13.3166 17.7071 13.7071Z"
+                      fill="#E0880F" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.3553 17.644C20.7114 17.2879 20.7114 16.7106 20.3553 16.3545L17.7071 13.7064C17.7071 13.7063 17.707 13.7062 17.7069 13.7062C17.3164 13.3158 16.6834 13.3159 16.2929 13.7064L15.5 14.4993L19.4048 18.4041C19.743 18.1907 20.0621 17.9371 20.3553 17.644ZM5.59521 4.59444L9.50003 8.49926L10.2929 7.70636C10.6834 7.31584 10.6834 6.68267 10.2929 6.29215L7.6448 3.64402C7.2887 3.28793 6.71136 3.28793 6.35526 3.64403C6.06214 3.93715 5.80862 4.2563 5.59521 4.59444Z"
+                      fill="#222222" />
+                  </svg>
+                  <p class="mb-0">تماس با ما</p>
+                </a>
+              </li>
+              <li class="px-3">
+                <a href="namayandegi.html" class="d-flex align-items-center gap-2 font-bold text-dark py-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="17" cy="9" r="3" fill="#E0880F" />
+                    <circle cx="7" cy="9" r="3" fill="#E0880F" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17.5685 18H19.895C20.4867 18 20.9403 17.4901 20.7966 16.9162C20.4284 15.4458 19.448 13 17 13C16.114 13 15.4201 13.3205 14.8781 13.7991C16.3858 14.7773 17.1654 16.4902 17.5685 18Z"
+                      fill="#E0880F" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.12197 13.7991C8.57989 13.3205 7.88609 13 7 13C4.55208 13 3.57166 15.4458 3.20343 16.9162C3.05971 17.4901 3.51335 18 4.10498 18H6.43155C6.83464 16.4902 7.61422 14.7773 9.12197 13.7991Z"
+                      fill="#E0880F" />
+                    <path
+                      d="M12 14C15.7087 14 16.6665 17.301 16.9139 19.0061C16.9932 19.5526 16.5523 20 16 20H8C7.44772 20 7.00684 19.5526 7.08614 19.0061C7.33351 17.301 8.29134 14 12 14Z"
+                      fill="#33363F" />
+                    <circle cx="12" cy="9" r="4" fill="#33363F" />
+                  </svg>
+                  <p class="mb-0">نمایندگی</p>
+                </a>
+              </li>
+              <li class="px-3">
+                <a href="blog.html" class="d-flex align-items-center gap-2 font-bold text-dark py-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 7C4 5.11438 4 4.17157 4.58579 3.58579C5.17157 3 6.11438 3 8 3H16C17.8856 3 18.8284 3 19.4142 3.58579C20 4.17157 20 5.11438 20 7V15C20 17.8284 20 19.2426 19.1213 20.1213C18.2426 21 16.8284 21 14 21H10C7.17157 21 5.75736 21 4.87868 20.1213C4 19.2426 4 17.8284 4 15V7Z"
+                      fill="#E0880F" />
+                    <path d="M9 8L15 8" stroke="#222222" stroke-width="1.2" stroke-linecap="round" />
+                    <path d="M9 12L15 12" stroke="#222222" stroke-width="1.2" stroke-linecap="round" />
+                  </svg>
+                  <p class="mb-0">بلاگ</p>
+                </a>
+              </li>
+              <li class="px-3">
+                <a href="info.html" class="d-flex align-items-center gap-2 font-bold text-dark py-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="9" fill="#E0880F" />
+                    <circle cx="12" cy="18" r="0.6" fill="#222222" stroke="#222222" stroke-width="0.2" />
+                    <path
+                      d="M12 16V15.1432C12 14.429 12.357 13.762 12.9512 13.3659L13.5497 12.9669C14.4558 12.3628 15 11.3459 15 10.2569V10C15 8.34315 13.6569 7 12 7V7C10.3431 7 9 8.34315 9 10V10"
+                      stroke="#222222" stroke-width="1.2" />
+                  </svg>
+                  <p class="mb-0">راهنما</p>
+                </a>
+              </li>
+              <li class="px-3">
+                <a href="login.html" class="d-flex align-items-center gap-2 font-bold text-dark py-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="8" r="4" fill="#222222" />
+                    <path
+                      d="M5.33788 17.3206C5.99897 14.5269 8.77173 13 11.6426 13H12.3574C15.2283 13 18.001 14.5269 18.6621 17.3206C18.79 17.8611 18.8917 18.4268 18.9489 19.0016C19.0036 19.5512 18.5523 20 18 20H6C5.44772 20 4.99642 19.5512 5.0511 19.0016C5.1083 18.4268 5.20997 17.8611 5.33788 17.3206Z"
+                      fill="#E0880F" />
+                  </svg>
+                  <p class="mb-0">ورود | ثبت نام</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer mobile -->
+    <div class="position-fixed bottom-0 w-100 h-md-107 h-161 end-0 start-0 d-xl-none">
+      <img alt="bg" src="assets/img/footermobile.png" class="img-fluid w-100 h-100 position-absolute end-0 start-0 top-0 bottom-0">
+      <div class="container h-100 position-relative z-10">
+        <div class="d-flex align-items-center justify-content-between text-center font-bold fs-sm-10 h-100">
+          <a href="products.html" class="d-block text-main">
+            <img alt="icon" src="assets/img/Shop_duotone.png" class="img-fluid w-26">
+            <p class="mb-0 mt-2">محصولات</p>
+          </a>
+          <a href="index.html" class="w-md-78 h-md-78 w-113 h-113 position-relative right-22 right-sm-15 -top-md-24 -top-36 d-flex align-items-center justify-content-center bg-black rounded-circle mx-auto">
+            <img alt="icon" src="assets/img/home.PNG" class="img-fluid w-50 rounded-circle">
+          </a>
+          <a href="orders.html" class="d-block text-main">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 9.3C4 9.15858 4 9.08787 4.04393 9.04393C4.08787 9 4.15858 9 4.3 9H19.7C19.8414 9 19.9121 9 19.9561 9.04393C20 9.08787 20 9.15858 20 9.3V16C20 17.8856 20 18.8284 19.4142 19.4142C18.8284 20 17.8856 20 16 20H8C6.11438 20 5.17157 20 4.58579 19.4142C4 18.8284 4 17.8856 4 16V9.3Z" fill="#E0880F"/>
+              <path d="M4.72426 8C4.41602 8 4.26191 8 4.22355 7.9074C4.18519 7.81481 4.29417 7.70583 4.51213 7.48787L5.82843 6.17157C6.40649 5.59351 6.69552 5.30448 7.06306 5.15224C7.4306 5 7.83935 5 8.65685 5H15.3431C16.1606 5 16.5694 5 16.9369 5.15224C17.3045 5.30448 17.5935 5.59351 18.1716 6.17157L19.4879 7.48787C19.7058 7.70583 19.8148 7.81481 19.7765 7.9074C19.7381 8 19.584 8 19.2757 8H4.72426Z" fill="#E0880F"/>
+              <path d="M9.5 12.5C9.5 13.163 9.76339 13.7989 10.2322 14.2678C10.7011 14.7366 11.337 15 12 15C12.663 15 13.2989 14.7366 13.7678 14.2678C14.2366 13.7989 14.5 13.163 14.5 12.5" stroke="white" stroke-linecap="round"/>
+            </svg>
+            <p class="mb-0 mt-2">پیگیری سفارشات</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+
+  <main class="pb-5 mb-5">
+
+    <!-- banner -->
+    <section class="mt-5">
+        <div class="container">
+          <img alt="banner" src="assets/img/banner (2).png" class="img-fluid w-100">
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section class="mt-3 mb-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-7">
+                <div>
+                    <h4 class="font-bold fs-24 px-4">سوالات متداول</h4>
+                    <div class="p-4 position-relative">
+                        <!--  -->
+                        <div class="accordion-box">
+                          <div class="accordion-items mb-4">
+                            <div class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                              <h5 class="fs-20 fs-sm-16 fw-bold mb-0">آیا عسل های شما 100 درصد طبیعی است ؟</h5>
+                              <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                                <svg class="transition active" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="accordion-content active">
+                              <p class="py-4 text-justify text-dark mx-md-5 mx-3 mb-0">تمامی عسل های عسل سرای قره چمن کاملا طبیعی
+                                بوده و
+                                پس از فرآوری هیچگونه ماده ای به آنها جهت تغییر طعم و مزه به محصولات اضافه نمیشود .</p>
+                            </div>
+                          </div>
+                          <div class="accordion-items mb-4">
+                            <div class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                              <h5 class="fs-20 fs-sm-16 fw-bold mb-0">آیا عسل های شما حرارت دیده است ؟</h5>
+                              <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                                <svg class="transition" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="accordion-content">
+                              <p class="py-4 text-justify text-dark mx-md-5 mx-3 mb-0">تمامی عسل های عسل سرای قره چمن کاملا طبیعی
+                                بوده و
+                                پس از فرآوری هیچگونه ماده ای به آنها جهت تغییر طعم و مزه به محصولات اضافه نمیشود .</p>
+                            </div>
+                          </div>
+                          <div class="accordion-items mb-4">
+                            <div class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                              <h5 class="fs-20 fs-sm-16 fw-bold mb-0">بعد از مدتی عسل من رس (شکرک ) بسته... ؟</h5>
+                              <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                                <svg class="transition" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="accordion-content">
+                              <p class="py-4 text-justify text-dark mx-md-5 mx-3 mb-0">تمامی عسل های عسل سرای قره چمن کاملا طبیعی
+                                بوده و
+                                پس از فرآوری هیچگونه ماده ای به آنها جهت تغییر طعم و مزه به محصولات اضافه نمیشود .</p>
+                            </div>
+                          </div>
+                          <div class="accordion-items mb-4">
+                            <div class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                              <h5 class="fs-20 fs-sm-16 fw-bold mb-0">آیا عسل های شما حرارت دیده است ؟</h5>
+                              <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                                <svg class="transition" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="accordion-content">
+                              <p class="py-4 text-justify text-dark mx-md-5 mx-3 mb-0">تمامی عسل های عسل سرای قره چمن کاملا طبیعی
+                                بوده و
+                                پس از فرآوری هیچگونه ماده ای به آنها جهت تغییر طعم و مزه به محصولات اضافه نمیشود .</p>
+                            </div>
+                          </div>
+                          <div class="accordion-items">
+                            <div class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                              <h5 class="fs-20 fs-sm-16 fw-bold mb-0">سفارشات ما کی به دست ما خواهند رسید ؟</h5>
+                              <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                                <svg class="transition" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="accordion-content">
+                              <p class="py-4 text-justify text-dark mx-md-5 mx-3 mb-0">
+                                تمامی سفارشات مشتریان ما طی 48 ساعت کاری تحویل اداره پست خواهد شد و ماکسیمم طی 7 روز کاری به دست شما عزیزان خواهد رسید درصورتی که بعد از 7 روز کاری به دست شما نرسید با ما درتماس باشید .
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <form class="rounded-20 shadow bg-white p-4">
+                  <!-- title -->
+                  <div class="mb-3">
+                    <h6 class="fw-bold text-main">انتقادات خود را به گوش ما برسانید</h6>
+                    <svg class="w-100" height="2" viewBox="0 0 456 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line opacity="0.3" x1="0.75" y1="1.25" x2="455.016" y2="1.24996" stroke="black" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="455.248" y1="0.912109" x2="312.397" y2="0.912098" stroke="#E8A64B" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <!--  -->
+                  <div class="mb-4">
+                    <label class="fw-bold d-block pe-4 mb-3">نام</label>
+                    <input class="outline-none px-3 w-100 rounded-10 border-0 h-61 bg-gray">
+                  </div>
+                  <div class="mb-4">
+                    <label class="fw-bold d-block pe-4 mb-3">ایمیل</label>
+                    <input type="email" class="outline-none px-3 w-100 rounded-10 border-0 h-61 bg-gray">
+                  </div>
+                  <div class="mb-4">
+                    <label class="fw-bold d-block pe-4 mb-3">سوال شما</label>
+                    <textarea class="outline-none w-100 rounded-10 border-0 p-3 bg-gray resize-none"></textarea>
+                  </div>
+                  <input type="submit" value="ارسال پیام" class="bg-main text-white fw-bold w-100 rounded-10 h-51 border-0">
+                </form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- social -->
+    <section>
+      <div class="container">
+        <div
+          class="bg-main rounded-t-54 px-md-5 px-2 pt-4 mx-auto w-100 h-727 -mb-656 -mb-lg-466 -mb-sm-616 d-flex flex-column flex-lg-row justify-content-lg-between gap-sm-5 gap-3">
+          <a
+            class="d-flex flex-lg-grow-1 shadow align-items-center justify-content-end rounded-pill bg-main2 p-4 ps-2 ps-sm-4 h-116 h-sm-56 gap-sm-4 gap-2">
+            <p class="mb-0 fs-26 fs-sm-20 font-bold text-dark">asal_gharacheman</p>
+            <svg class="flex-shrink-0 w-sm-40 h-sm-40" width="78" height="79" viewBox="0 0 78 79" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M39 0C17.4556 0 0 17.6706 0 39.4804C0 61.2901 17.4556 78.9607 39 78.9607C60.5444 78.9607 78 61.2901 78 39.4804C78 17.6706 60.5444 0 39 0ZM58.154 27.0472L51.7536 57.5808C51.2819 59.7459 50.0081 60.2712 48.231 59.2524L38.481 51.9772L33.779 56.562C33.2601 57.0873 32.8198 57.5331 31.8133 57.5331L32.5052 47.4879L50.5742 30.9634C51.3605 30.263 50.4012 29.865 49.3633 30.5654L27.0327 44.7975L17.4085 41.7569C15.3169 41.0882 15.2698 39.6396 17.8488 38.6207L55.4492 23.9429C57.1948 23.3062 58.7202 24.3728 58.154 27.0472Z"
+                fill="black" />
+            </svg>
+          </a>
+          <a
+            class="d-flex flex-lg-grow-1 shadow align-items-center justify-content-end rounded-pill bg-main2 p-4 ps-2 ps-sm-4 h-116 h-sm-56 gap-sm-4 gap-2">
+            <p class="mb-0 fs-26 fs-sm-20 font-bold text-dark">asal_gharacheman</p>
+            <svg class="flex-shrink-0 w-sm-40 h-sm-40" width="79" height="79" viewBox="0 0 79 79" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M54.8629 27.3661C54.5243 26.4784 54.0058 25.6723 53.3408 24.9998C52.6757 24.3272 51.8789 23.8032 51.0016 23.4613C49.7937 23.0084 48.5178 22.7691 47.2297 22.7536C45.0877 22.6549 44.4455 22.6302 39.0194 22.6302C33.5933 22.6302 32.9511 22.6549 30.8091 22.7536C29.5196 22.7686 28.2424 23.008 27.0331 23.4613C26.1562 23.8041 25.3599 24.329 24.6956 25.0022C24.0312 25.6755 23.5136 26.4821 23.1759 27.3702C22.7285 28.593 22.492 29.8846 22.4768 31.1885C22.3793 33.3569 22.3549 34.007 22.3549 39.5C22.3549 44.993 22.3793 45.6431 22.4768 47.8114C22.4916 49.1168 22.7281 50.4098 23.1759 51.6339C23.5145 52.5216 24.033 53.3277 24.6981 54.0002C25.3631 54.6728 26.1599 55.1968 27.0372 55.5386C28.2452 55.9915 29.521 56.2309 30.8091 56.2463C32.9511 56.3451 33.5933 56.3657 39.0194 56.3657C44.4455 56.3657 45.0877 56.3451 47.2297 56.2422C48.5189 56.2286 49.7962 55.9906 51.0057 55.5386C51.8826 55.1959 52.6789 54.671 53.3432 53.9977C54.0076 53.3245 54.5252 52.5179 54.8629 51.6298C55.3103 50.4069 55.5468 49.1154 55.562 47.8114C55.6595 45.6431 55.6799 44.993 55.6799 39.5C55.6799 34.007 55.6595 33.3569 55.5579 31.1885C55.5445 29.8835 55.3094 28.5905 54.8629 27.3661ZM39.0194 50.0662C36.955 50.0662 34.937 49.4465 33.2205 48.2855C31.5041 47.1245 30.1662 45.4743 29.3762 43.5435C28.5862 41.6128 28.3795 39.4883 28.7823 37.4386C29.185 35.389 30.1791 33.5062 31.6388 32.0285C33.0986 30.5508 34.9584 29.5445 36.9831 29.1368C39.0078 28.7291 41.1065 28.9383 43.0137 29.7381C44.921 30.5378 46.5511 31.8921 47.698 33.6297C48.8449 35.3673 49.4571 37.4102 49.4571 39.5C49.4571 42.3023 48.3574 44.9899 46.4 46.9715C44.4425 48.953 41.7877 50.0662 39.0194 50.0662ZM49.8676 30.9869C49.3853 30.9869 48.9138 30.8421 48.5127 30.5709C48.1117 30.2996 47.7991 29.914 47.6145 29.4629C47.43 29.0118 47.3817 28.5154 47.4758 28.0365C47.5699 27.5577 47.8021 27.1178 48.1432 26.7725C48.4842 26.4272 48.9188 26.1921 49.3918 26.0969C49.8649 26.0016 50.3552 26.0505 50.8009 26.2373C51.2465 26.4242 51.6274 26.7406 51.8953 27.1466C52.1633 27.5526 52.3063 28.0299 52.3063 28.5182C52.3063 29.1729 52.0494 29.8009 51.592 30.2638C51.1347 30.7268 50.5144 30.9869 49.8676 30.9869ZM45.795 39.5C45.795 40.8566 45.3976 42.1827 44.6531 43.3107C43.9086 44.4386 42.8504 45.3177 41.6123 45.8369C40.3742 46.356 39.0119 46.4919 37.6976 46.2272C36.3832 45.9626 35.1759 45.3093 34.2284 44.35C33.2808 43.3908 32.6355 42.1686 32.374 40.8381C32.1126 39.5076 32.2468 38.1285 32.7596 36.8752C33.2724 35.6218 34.1409 34.5506 35.2551 33.7969C36.3693 33.0433 37.6793 32.641 39.0194 32.641C40.8164 32.641 42.5398 33.3636 43.8104 34.6499C45.0811 35.9363 45.795 37.6809 45.795 39.5ZM39.0194 0C31.3021 0 23.7581 2.31663 17.3414 6.65695C10.9247 10.9973 5.92348 17.1663 2.97019 24.384C0.0169064 31.6017 -0.755807 39.5438 0.749764 47.2061C2.25534 54.8683 5.97157 61.9065 11.4285 67.4307C16.8855 72.9549 23.8381 76.7169 31.4071 78.241C38.9761 79.7651 46.8216 78.9829 53.9515 75.9932C61.0813 73.0036 67.1753 67.9408 71.4628 61.445C75.7503 54.9493 78.0388 47.3124 78.0388 39.5C78.0388 29.0239 73.9278 18.977 66.6103 11.5693C59.2927 4.16159 49.368 0 39.0194 0ZM59.2201 47.9801C59.1857 49.6874 58.8654 51.3764 58.273 52.9753C57.751 54.3416 56.9528 55.5825 55.9295 56.6184C54.9062 57.6543 53.6804 58.4624 52.3307 58.9908C50.7526 59.59 49.0856 59.9142 47.4004 59.9495C45.23 60.0482 44.539 60.0729 39.0194 60.0729C33.4998 60.0729 32.8088 60.0482 30.6384 59.9495C28.9532 59.9142 27.2862 59.59 25.7081 58.9908C24.3584 58.4624 23.1326 57.6543 22.1093 56.6184C21.086 55.5825 20.2878 54.3416 19.7658 52.9753C19.1738 51.3777 18.8536 49.6901 18.8187 47.9843C18.7212 45.7871 18.6968 45.0876 18.6968 39.5C18.6968 33.9124 18.7212 33.2129 18.8187 31.0157C18.8523 29.3101 19.1711 27.6225 19.7617 26.0247C20.2837 24.6572 21.0823 23.4153 22.1063 22.3786C23.1304 21.342 24.3572 20.5335 25.7081 20.0051C27.2865 19.4073 28.9535 19.0845 30.6384 19.0505C32.8088 18.9518 33.4998 18.9271 39.0194 18.9271C44.539 18.9271 45.23 18.9518 47.4004 19.0505C49.0853 19.0845 50.7523 19.4073 52.3307 20.0051C53.6808 20.534 54.9069 21.3426 55.9302 22.3793C56.9535 23.4159 57.7515 24.6576 58.273 26.0247C58.865 27.6223 59.1852 29.3098 59.2201 31.0157C59.3176 33.2129 59.342 33.9124 59.342 39.5C59.342 45.0876 59.3176 45.783 59.2201 47.9801Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="h-564 h-xl-auto mt-5 rounded-t-54 position-relative opacity-96 pb-xl-0">
+    <!-- overlay -->
+    <div class="footerOverlay"></div>
+    <!--  -->
+    <div class="container pt-5 position-relative z-10 px-sm-5">
+      <!-- menu -->
+      <ul class="row mx-0 g-4 list-unstyled mb-0 pe-0">
+        <li class="col-lg-2 col-md-4 col-6">
+          <a href="products.html" class="d-flex align-items-center text-white">
+            <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.1627 28.4526C13.5779 29.4048 11.5969 29.4048 10.0121 28.4526L2.53047 23.957C1.02602 23.053 0.105726 21.4263 0.105726 19.6712L0.105726 10.3288C0.105726 8.57366 1.02602 6.94701 2.53047 6.04302L10.0121 1.54742C11.5969 0.595152 13.5779 0.595152 15.1627 1.54742L22.6443 6.04302C24.1488 6.94701 25.0691 8.57365 25.0691 10.3288L25.0691 19.6712C25.0691 21.4263 24.1488 23.053 22.6443 23.957L15.1627 28.4526Z"
+                fill="url(#paint0_linear_329_5520)" />
+              <defs>
+                <linearGradient id="paint0_linear_329_5520" x1="26.4662" y1="15.5357" x2="-0.223798" y2="15.5357"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F3B21C" />
+                  <stop offset="1" stop-color="#F3B21C" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p class="mb-0">محصولات</p>
+          </a>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6">
+          <a href="about.html" class="d-flex align-items-center text-white">
+            <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.1627 28.4526C13.5779 29.4048 11.5969 29.4048 10.0121 28.4526L2.53047 23.957C1.02602 23.053 0.105726 21.4263 0.105726 19.6712L0.105726 10.3288C0.105726 8.57366 1.02602 6.94701 2.53047 6.04302L10.0121 1.54742C11.5969 0.595152 13.5779 0.595152 15.1627 1.54742L22.6443 6.04302C24.1488 6.94701 25.0691 8.57365 25.0691 10.3288L25.0691 19.6712C25.0691 21.4263 24.1488 23.053 22.6443 23.957L15.1627 28.4526Z"
+                fill="url(#paint0_linear_329_5520)" />
+              <defs>
+                <linearGradient id="paint0_linear_329_5520" x1="26.4662" y1="15.5357" x2="-0.223798" y2="15.5357"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F3B21C" />
+                  <stop offset="1" stop-color="#F3B21C" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p class="mb-0">درباره ما</p>
+          </a>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6">
+          <a href="contact.html" class="d-flex align-items-center text-white">
+            <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.1627 28.4526C13.5779 29.4048 11.5969 29.4048 10.0121 28.4526L2.53047 23.957C1.02602 23.053 0.105726 21.4263 0.105726 19.6712L0.105726 10.3288C0.105726 8.57366 1.02602 6.94701 2.53047 6.04302L10.0121 1.54742C11.5969 0.595152 13.5779 0.595152 15.1627 1.54742L22.6443 6.04302C24.1488 6.94701 25.0691 8.57365 25.0691 10.3288L25.0691 19.6712C25.0691 21.4263 24.1488 23.053 22.6443 23.957L15.1627 28.4526Z"
+                fill="url(#paint0_linear_329_5520)" />
+              <defs>
+                <linearGradient id="paint0_linear_329_5520" x1="26.4662" y1="15.5357" x2="-0.223798" y2="15.5357"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F3B21C" />
+                  <stop offset="1" stop-color="#F3B21C" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p class="mb-0">ارتباط با ما</p>
+          </a>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6">
+          <a href="blog.html" class="d-flex align-items-center text-white">
+            <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.1627 28.4526C13.5779 29.4048 11.5969 29.4048 10.0121 28.4526L2.53047 23.957C1.02602 23.053 0.105726 21.4263 0.105726 19.6712L0.105726 10.3288C0.105726 8.57366 1.02602 6.94701 2.53047 6.04302L10.0121 1.54742C11.5969 0.595152 13.5779 0.595152 15.1627 1.54742L22.6443 6.04302C24.1488 6.94701 25.0691 8.57365 25.0691 10.3288L25.0691 19.6712C25.0691 21.4263 24.1488 23.053 22.6443 23.957L15.1627 28.4526Z"
+                fill="url(#paint0_linear_329_5520)" />
+              <defs>
+                <linearGradient id="paint0_linear_329_5520" x1="26.4662" y1="15.5357" x2="-0.223798" y2="15.5357"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F3B21C" />
+                  <stop offset="1" stop-color="#F3B21C" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p class="mb-0">بلاگ</p>
+          </a>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6">
+          <a href="addorder.html" class="d-flex align-items-center text-white">
+            <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.1627 28.4526C13.5779 29.4048 11.5969 29.4048 10.0121 28.4526L2.53047 23.957C1.02602 23.053 0.105726 21.4263 0.105726 19.6712L0.105726 10.3288C0.105726 8.57366 1.02602 6.94701 2.53047 6.04302L10.0121 1.54742C11.5969 0.595152 13.5779 0.595152 15.1627 1.54742L22.6443 6.04302C24.1488 6.94701 25.0691 8.57365 25.0691 10.3288L25.0691 19.6712C25.0691 21.4263 24.1488 23.053 22.6443 23.957L15.1627 28.4526Z"
+                fill="url(#paint0_linear_329_5520)" />
+              <defs>
+                <linearGradient id="paint0_linear_329_5520" x1="26.4662" y1="15.5357" x2="-0.223798" y2="15.5357"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F3B21C" />
+                  <stop offset="1" stop-color="#F3B21C" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p class="mb-0">ثبت سفارش</p>
+          </a>
+        </li>
+        <li class="col-lg-2 col-md-4 col-6">
+          <a href="faq.html" class="d-flex align-items-center text-white">
+            <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.1627 28.4526C13.5779 29.4048 11.5969 29.4048 10.0121 28.4526L2.53047 23.957C1.02602 23.053 0.105726 21.4263 0.105726 19.6712L0.105726 10.3288C0.105726 8.57366 1.02602 6.94701 2.53047 6.04302L10.0121 1.54742C11.5969 0.595152 13.5779 0.595152 15.1627 1.54742L22.6443 6.04302C24.1488 6.94701 25.0691 8.57365 25.0691 10.3288L25.0691 19.6712C25.0691 21.4263 24.1488 23.053 22.6443 23.957L15.1627 28.4526Z"
+                fill="url(#paint0_linear_329_5520)" />
+              <defs>
+                <linearGradient id="paint0_linear_329_5520" x1="26.4662" y1="15.5357" x2="-0.223798" y2="15.5357"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F3B21C" />
+                  <stop offset="1" stop-color="#F3B21C" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p class="mb-0 flex-shrink-0">سوالات متداول</p>
+          </a>
+        </li>
+      </ul>
+      <!-- address && logo && contact -->
+      <div class="row mx-0 align-items-start align-items-xl-end mt-3">
+        <div class="col-xl-4 col-lg-6">
+          <div>
+            <div class="d-flex align-items-center">
+              <img alt="logo" src="assets/img/gharachemanlogo 2.png" class="img-fluid">
+              <h1 class="text-white font-bold fs-32 fs-sm-28">عسل قره چمـن</h1>
+            </div>
+            <p class="mb-0 g-4 text-white text-justify">شما تو مجموعه عسل قره چمن از فروشنده محصول خريد نميكنيد مستقيم
+              با توليد كننده در ارتباط هستيد و بخاطر همينه بهترين كيفيت رو با مناسب ترين قيمت دستتون ميرسونيم.</p>
+            <a class="d-flex align-items-center p-2 gap-3 rounded-pill bg-secondary2 opacity-92 mt-3">
+              <div class="d-flex align-items-center justify-content-center bg-dark rounded-circle w-36 h-36">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.234 18C20.98 18.4561 21.3728 18.9734 21.3728 19.5C21.3728 20.0266 20.9801 20.5439 20.234 21C19.488 21.4561 18.415 21.8348 17.1228 22.0981C15.8306 22.3614 14.3649 22.5 12.8728 22.5C11.3807 22.5 9.91497 22.3614 8.6228 22.0981C7.33064 21.8348 6.25762 21.4561 5.51159 21C4.76556 20.5439 4.3728 20.0266 4.3728 19.5C4.3728 18.9734 4.76556 18.4561 5.51159 18"
+                    stroke="#988E79" stroke-linecap="round" />
+                  <path
+                    d="M19.8728 10C19.8728 15.0163 14.7538 18.0348 13.2708 18.804C13.018 18.9351 12.7276 18.9351 12.4748 18.804C10.9918 18.0348 5.8728 15.0163 5.8728 10C5.8728 6.13401 9.00681 3 12.8728 3C16.7388 3 19.8728 6.13401 19.8728 10Z"
+                    fill="#988E79" />
+                  <circle cx="12.8728" cy="10" r="3" fill="#222222" />
+                </svg>
+              </div>
+              <p class="mb-0 text-dark g-4">آدرس: شهر - بلوار- خیابان - فروشگاه قره چمن</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-6">
+          <div class="row">
+            <div class="col-xl-4 col-12">
+              <a
+                class="d-flex align-items-center justify-content-end p-2 gap-2 rounded-pill bg-secondary2 opacity-92 mt-3">
+                <p class="mb-0 text-dark g-4">۰۹۱۴۲۷۳۰۰۳۰</p>
+                <div class="d-flex align-items-center justify-content-center bg-dark rounded-circle w-36 h-36">
+                  <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18.1741 13.7071L20.8223 16.3552C21.1784 16.7113 21.1784 17.2887 20.8223 17.6448C18.8971 19.57 15.8492 19.7866 13.671 18.153L12.0956 16.9714C10.3521 15.6638 8.80326 14.115 7.49561 12.3714L6.31405 10.796C4.68045 8.61788 4.89705 5.56999 6.82227 3.64477C7.17837 3.28867 7.75571 3.28867 8.11181 3.64477L10.7599 6.29289C11.1505 6.68342 11.1505 7.31658 10.7599 7.70711L9.73879 8.72825C9.5765 8.89054 9.53627 9.13846 9.63891 9.34373C10.8256 11.7171 12.75 13.6415 15.1233 14.8281C15.3286 14.9308 15.5765 14.8905 15.7388 14.7283L16.7599 13.7071C17.1505 13.3166 17.7836 13.3166 18.1741 13.7071Z"
+                      fill="#B5A27B" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.8223 17.644C21.1784 17.2879 21.1784 16.7106 20.8223 16.3545L18.1742 13.7064C18.1741 13.7063 18.1741 13.7062 18.174 13.7062C17.7835 13.3158 17.1504 13.3159 16.76 13.7064L15.9671 14.4993L19.8719 18.4041C20.21 18.1907 20.5292 17.9371 20.8223 17.644ZM6.06226 4.59444L9.96707 8.49926L10.76 7.70636C11.1505 7.31584 11.1505 6.68267 10.76 6.29215L8.11184 3.64402C7.75574 3.28793 7.1784 3.28793 6.8223 3.64403C6.52918 3.93715 6.27566 4.2563 6.06226 4.59444Z"
+                      fill="white" fill-opacity="0.29" />
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="d-flex align-items-center justify-content-end p-2 gap-2 rounded-pill bg-secondary2 opacity-92 mt-3">
+                <p class="mb-0 text-dark fs-15">gharecham@gmail.com</p>
+                <div
+                  class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-36 h-36">
+                  <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.72168 16.75V10.6593C4.72168 10.5478 4.83899 10.4753 4.93872 10.5251L11.7205 13.9134C12.5646 14.3352 13.558 14.3352 14.4021 13.9134L21.1839 10.5251C21.2836 10.4753 21.4009 10.5478 21.4009 10.6593V16.75C21.4009 17.8546 20.5055 18.75 19.4009 18.75H6.72168C5.61711 18.75 4.72168 17.8546 4.72168 16.75Z"
+                      fill="#B5A27B" />
+                    <path
+                      d="M4.72168 8.24935V9.28161C4.72168 9.33844 4.7538 9.3904 4.80464 9.4158L11.7205 12.8711C12.5646 13.2929 13.558 13.2929 14.4021 12.8711L21.318 9.4158C21.3688 9.3904 21.4009 9.33844 21.4009 9.28161V8.24935C21.4009 7.14478 20.5055 6.24935 19.4009 6.24935H6.72168C5.61711 6.24935 4.72168 7.14478 4.72168 8.24935Z"
+                      fill="#CABDA1" />
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="d-flex align-items-center justify-content-center p-3 text-center gap-2 rounded-23 bg-secondary2 opacity-92 mt-3">
+                <p class="mb-0 text-dark g-4">ساعت کاری فروشگاه : همه روزه از ۹ تا ۲۲</p>
+              </a>
+            </div>
+            <div class="col-xl-4 col-6 mt-3">
+              <a class="d-flex align-items-center justify-content-center bg-white rounded-30 p-2">
+                <img alt="namad" src="assets/img/namad.png" class="img-fluid">
+              </a>
+            </div>
+            <div class="col-xl-4 col-6 mt-3">
+              <a class="d-flex align-items-center justify-content-center bg-white rounded-30 p-2">
+                <img alt="namad" src="assets/img/neshan.png" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- copy right -->
+      <p class="text-center g-4 fw-bold mb-0 text-white mt-lg-5 pt-4">طراحی و توسعه یافته با عشق توسط گروه <a
+          class="text-decoration-underline text-white">الیتیست</a></p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="assets/js/audioplayer.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
