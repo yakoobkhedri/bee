@@ -191,7 +191,9 @@ a {
 .rounded-t-54 {
     border-radius: 54px 54px 0 0;
 }
-
+.rounded-100 {
+    border-radius: 100px;
+}
 /* z index */
 .-z-1 {
     z-index: -1;
@@ -1406,7 +1408,9 @@ a {
 .h-116 {
     height: 116px;
 }
-
+.h-126 {
+    height: 126px;
+}
 .h-127 {
     height: 127px;
 }
@@ -1531,7 +1535,9 @@ a {
 .-mt-71 {
     margin-top: -71px;
 }
-
+.-mt-89 {
+    margin-top: -89px;
+}
 .mt-112 {
     margin-top: 112px;
 }
