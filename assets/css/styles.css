@@ -783,9 +783,12 @@ a {
 /* background */
 
 .bg-main {
-    background: #E0880F
+    background: #E0880F;
 }
-
+.hover-main-bg:hover,.hover-main-bg.active{
+    background-color: #E0880F;
+    color: black!important;
+}
 .bg-main2 {
     background: #e5ad5f;
 }
