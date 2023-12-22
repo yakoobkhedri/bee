@@ -1392,7 +1392,9 @@ a {
 .h-97 {
     height: 97px;
 }
-
+.h-104 {
+    height: 104%;
+}
 .h-107 {
     height: 107px;
 }
@@ -2221,7 +2223,15 @@ footer {
     .black-lg {
         color: black !important;
     }
-
+    .bg-lg-transparent{
+        background-color: transparent!important;
+    }
+    .shadow-lg-none{
+        box-shadow: none!important;
+    }
+    .border-b-lg-none{
+        border-bottom: none!important;
+    }
     .border-right-lg-0 {
         border-right: none !important;
     }
