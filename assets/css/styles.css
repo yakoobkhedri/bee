@@ -1790,7 +1790,18 @@ a {
     content: url('../img/arrow.png');
     transform: rotate(180deg);
 }
-
+.nav-link.active {
+   background-color: #e0880f!important;
+   border-color: transparent!important;
+}
+.nav-link{
+    border-top-left-radius: 25px!important;
+    border-top-right-radius: 25px!important;
+    background-color: #e5ad5f!important;
+}
+.nav-tabs .nav-link:hover {
+   border-color: transparent!important;
+}
 /* accordion */
 .accordion-content {
     max-height: 0;
