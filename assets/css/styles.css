@@ -497,7 +497,9 @@ a {
 .-top-27 {
     top: -27px;
 }
-
+.top-27 {
+    top: 27%;
+}
 .-top-25 {
     top: -25px;
 }
@@ -2255,11 +2257,19 @@ footer {
     .h-lg-auto {
         height: auto;
     }
-
+    .h-lg-95 {
+        height: 95px;
+    }
     .w-lg-84 {
         width: 84%;
     }
-
+    
+    .w-lg-40 {
+        width: 40px;
+    }
+    .top-lg-1{
+        top: 1%;
+    }
     .text-lg-black {
         color: black !important;
     }
@@ -2314,7 +2324,6 @@ footer {
     .h-md-78 {
         height: 78px;
     }
-
     .-top-md-24 {
         top: -24px;
     }
