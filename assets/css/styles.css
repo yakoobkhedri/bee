@@ -993,6 +993,10 @@ a {
     max-width: 507px;
     width: 100%;
 }
+.max-w-644 {
+    max-width: 644px;
+    width: 100%;
+}
 .max-w-690 {
     max-width: 690px;
     width: 100%;
@@ -2375,7 +2379,12 @@ footer {
     .shadow-md-none {
         box-shadow: none;
     }
-
+    .rounded-md-15{
+        border-radius: 15px!important;
+    }
+    .position-md-static{
+        position: static!important;
+    }
     .category .shadow2 {
         box-shadow: 0px 0px 27.728553771972656px 0px #0000001A;
     }
