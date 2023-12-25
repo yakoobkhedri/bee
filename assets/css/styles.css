@@ -1029,7 +1029,9 @@ a {
 .w-26 {
     width: 26px;
 }
-
+.w-28 {
+    width: 28px;
+}
 .w-30 {
     width: 30px;
 }
@@ -1292,7 +1294,9 @@ a {
 .h-27 {
     height: 27px;
 }
-
+.h-28 {
+    height: 28px;
+}
 .h-30 {
     height: 30px;
 }
