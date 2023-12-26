@@ -375,10 +375,10 @@
   <main class="pb-5 mb-5">
 
     <!-- order form -->
-    <section>
+    <section class="mb-5">
       <div class="container">
         <div class="row g-4">
-          <div class="col-xl-9">
+          <div class="col-xl-8">
             <form class="rounded-25 shadow p-sm-4 p-3 pb-5 mt-5">
               <div class="d-flex align-items-center gap-1">
                 <p class="fs-18 text-main fw-bold mb-0">فرم ثبت سفارش</p>
@@ -474,16 +474,67 @@
               </div>
             </form>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-4 pt-4">
             <!-- my order -->
-            <form class="rounded-25 shadow p-4 mt-5">
+            <form class="rounded-25 shadow p-4 px-3 mt-5">
               <div
                 class="bg-main -mt-46 h-40 mb-4 position-relative rounded-10 d-flex align-items-center justify-content-center gap-2 font-bold">
                 <div class="bg-main position-absolute w-92 mx-auto h-9 end-0 start-0 rounded-t-25 opacity-80 -top-9">
                 </div>
                 <p class="mb-0 text-white">سفارش شما</p>
               </div>
+              <div class="d-flex align-items-center justify-content-between border-bottom pb-2">
+                <p class="mb-0 fs-14 text-secondary">محصول</p>
+                <p class="mb-0">جمع جزء</p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mt-3">
+                <p class="mb-0 fs-14 text-secondary">عسل بره موم (بسته 700 گرمی)</p>
+                <p class="mb-0">۳۹۰،۰۰۰ تومان</p>
+              </div>
+              <div class="d-flex align-items-center justify-content-between border-b-dash pb-2 mt-3 fs-14">
+                <p class="mb-0 text-secondary">حمل و نقل:</p>
+                <div class="d-flex flex-column gap-4 align-items-end">
+                  <label class="d-flex align-items-center gap-4 cursor-pointer">
+                    <div>
+                      <p class="mb-0">ارسال توسط اداره پست</p>
+                      <p class="mb-0"> (انبار تبریز)<span class="text-danger font-bold d-inline-block me-1">30,000 تومان</span></p>
+                    </div>
+                    <input type="checkbox" class="form-check-input">
+                  </label>
+                  <label class="d-flex align-items-center gap-4 cursor-pointer">
+                    <div>
+                      <p class="mb-0">ارسال سریع پیک (انبار تهران)</p>
+                      <p class="mb-0">(هزینه ارسال پس کرایه)</p>
+                    </div>
+                    <input type="checkbox" class="form-check-input">
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between pb-2 mt-3">
+                <p class="mb-0 fs-14">مبلغ قابل پرداخت:</p>
+                <p class="mb-0 font-bold fs-24">۴۴۰،۰۰۰ تومان</p>
+              </div>
+              <a class="d-flex align-items-center justify-content-center gap-2 mt-3 shadow text-white fw-bold fs-14 bg-main rounded-10 h-51">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="white"/>
+                  <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round"/>
+                  <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"/>
+                </svg>
+               <p class="mb-0">ثبت سفارش</p>
+              </a>
             </form>
+            <!--  -->
+            <div class="mt-5">
+              <a><img alt="pay" src="assets/img/zarinpal.png" class="img-fluid"></a>
+              <div class="d-flex flex-column flex-sm-row align-items-center gap-2 mt-4">
+               <p class="mb-0 font-bold fs-20">قبلا ثبت نام کرده اید؟</p>
+               <p class=mb-0>برای ورود <a class=text-dark href="login.html">اینجا</a> را کلیک کنید</p>
+              </div>
+              <div class="d-flex flex-column flex-sm-row align-items-center gap-2 mt-2">
+                <p class="mb-0 font-bold fs-20">کد تخفیف دارید؟</p>
+                <p class=mb-0>برای نوشتن کد <a class="text-dark">اینجا</a> را کلیک کنید</p>
+               </div>
+            </div>
           </div>
         </div>
       </div>
