@@ -801,8 +801,17 @@ a {
     background: #E0880F;
 }
 .hover-main-bg:hover,.hover-main-bg.active{
-    background-color: #E0880F;
+    background-color: #E0880F!important;
     color: black!important;
+}
+.hover-main-bg:hover div svg:first-child path{
+    fill: url(#paint0_linear_619_4086);
+}
+.hover-main-bg:hover div svg:last-child path,.hover-main-bg.active div svg:last-child path{
+    stroke: white;
+}
+#profile .hover-main-bg:hover p,#profile .hover-main-bg.active p{
+    color: white!important;
 }
 .bg-main2 {
     background: #e5ad5f;
@@ -2544,7 +2553,9 @@ footer {
     .fs-sm-11 {
         font-size: 11px;
     }
-
+    .fs-sm-12 {
+        font-size: 12px;
+    }
     .fs-sm-13 {
         font-size: 13px;
     }
