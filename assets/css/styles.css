@@ -309,6 +309,12 @@ a {
 .border-main-gradient {
     border: 3px solid #f9ebd8;
 }
+.border-main-gradient-7 {
+    border: 7px solid #f9ebd8;
+}
+.border-main-gradient-7-transparent {
+    border: 7px solid #ffbf6747;
+  }
 .border-main{
     border: 1px solid #e0880f;
 }
@@ -817,7 +823,9 @@ a {
 .bg-main-gradient4 {
     background-color: #D6AD61;
 }
-
+.bg-main-gradient5 {
+    background-image: linear-gradient(to bottom, #fff6e9b5, #ffffff1a);
+  }
 .bg-main3 {
     background-color: #ececf7;
 }
@@ -1268,7 +1276,9 @@ a {
 .h-16 {
     height: 16px;
 }
-
+.h-17 {
+    height: 17px;
+}
 .h-18 {
     height: 18px;
 }
@@ -1372,7 +1382,9 @@ a {
 .h-68 {
     height: 68px;
 }
-
+.h-71 {
+    height: 71px;
+}
 .h-76 {
     height: 76px;
 }
@@ -1559,6 +1571,9 @@ a {
 
 .-mt-12 {
     margin-top: -12px;
+}
+.-mt-25 {
+    margin-top: -25px;
 }
 .-mt-46{
     margin-top: -46px;
