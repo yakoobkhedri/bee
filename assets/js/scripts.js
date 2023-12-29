@@ -47,9 +47,13 @@ var banner = new Swiper(".banner", {
   loop: true,
   autoplay: true,
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 80,
   pagination: {
     el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 var products = new Swiper(".products", {

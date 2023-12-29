@@ -650,7 +650,9 @@ a {
 .right-15 {
     right: 15px;
 }
-
+.right-16 {
+    right: 16px;
+}
 .right-22 {
     right: 22px;
 }
@@ -1843,6 +1845,9 @@ a {
 .swiper-button-next::after {
     content: url('../img/arrow.png');
     transform: rotate(180deg);
+}
+.banner .swiper-button-prev::after,.banner .swiper-button-next::after {
+  display: none;
 }
 .nav-link.active {
    background-color: #e0880f!important;
