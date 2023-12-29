@@ -848,6 +848,9 @@ a {
 .bg-black {
     background-color: #242424;
 }
+.bg-black-transparent{
+    background-color: #0000007a;
+}
 
 .bg-second {
     background: #1B190F;
@@ -1175,7 +1178,9 @@ a {
 .w-160 {
     width: 160px;
 }
-
+.w-172 {
+    width: 172px;
+}
 .w-179 {
     width: 179px;
 }

@@ -125,3 +125,15 @@ accordionBtn2.forEach((item)=>{
     item.querySelector('svg').classList.toggle('active');
   })
 })
+
+//  product slider
+
+let smallImg=Array.from(document.getElementsByClassName('smallImgs'));
+let bigImg=document.getElementById('bigImg');
+
+smallImg.forEach((item)=>{
+    item.addEventListener('click',function () {
+        let imgSrc=item.querySelector('img').src;
+        bigImg.src=imgSrc;
+    })
+})
