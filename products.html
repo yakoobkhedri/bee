@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/audioplayer.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
-  <title>لیست وبلاگ</title>
+  <title>لیست محصولات</title>
 </head>
 
 <body>
@@ -86,7 +86,7 @@
                     class="text-white h-100 d-flex align-items-center">صفحه
                     اصلی</a></li>
                 <li id="productMenu" class="h-100 d-flex align-items-center">
-                  <a href="products.html" class="text-white d-flex h-100 align-items-center gap-2">
+                  <a href="products.html" class="text-white d-flex h-100 align-items-center gap-2 active">
                     <p class="mb-0">محصولات</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
                       <path d="M8.22119 1.51422L4.44977 5.28564L0.678343 1.51422" stroke="white" stroke-width="1.25714"
@@ -104,7 +104,7 @@
                 <li class="h-100 d-flex align-items-center"> <a href="namayandegi.html"
                     class="text-white h-100 d-flex align-items-center">نمایندگی ها</a></li>
                 <li class="h-100 d-flex align-items-center"> <a href="blog.html"
-                    class="active text-white h-100 d-flex align-items-center">بلاگ</a></li>
+                    class="text-white h-100 d-flex align-items-center">بلاگ</a></li>
                 <li class="h-100 d-flex align-items-center"> <a href="info.html"
                     class="text-white h-100 d-flex align-items-center">راهنما</a></li>
 
@@ -377,7 +377,17 @@
     <!-- banner -->
     <section class="mt-5">
       <div class="container">
-        <img alt="banner" src="assets/img/blog (2).png" class="img-fluid w-100">
+        <div class="position-relative">
+          <img alt="banner" src="assets/img/banner (3).PNG" class="img-fluid w-100">
+          <div class="position-absolute top-87 right-210 text-white">
+            <h1 class="fs-40 font-bold">محصولات قره چمن</h1>
+            <div class="d-flex align-items-center gap-2 fs-24">
+              <a href="index.html" class="text-white">خانه</a>
+              <span>></span>
+              <h2 class="fs-24 mb-0">محصولات</h2>
+             </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -386,67 +396,235 @@
       <div class="container">
         <div class="row g-4">
           <div class="col-xl-9">
-            <div class="rounded-25 p-4 shadow border-b-main-6 d-flex flex-column flex-sm-row align-items-center gap-3 mb-5">
-              <img alt="logo" src="assets/img/blog3.png" class="img-fluid w-200 h-200 rounded-circle">
-               <div>
-                <p class="mb-3 text-main fs-15 text-center text-sm-end">عسل شناسی, ژل رویال</p>
-                <h5 class="font-bold fs-24 text-dark mb-4 text-center text-sm-end">آیا ژل رویال برای کودکان خوب است؟
-                </h5>
-                <p class="text-dark text-justify">
-                  جهت حفظ سلامتی، افزایش انرژی و رشد سالم کودکان، لازم است که به مصرف ویتامین‌ها و مکمل‌های خاصی که کودک
-                  به آن نیاز دارد، توجه ویژه ای داشته باشیم.
-                </p>
-                <a href="single-blog.html"
-                  class="d-flex align-items-center justify-content-center gap-sm-3 gap-2 w-sm-107 h-sm-33 h-51 w-133 rounded-pill bg-main mx-auto mx-sm-0">
-                  <p class="mb-0 text-black fs-14">ادامه</p>
-                  <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.58472 5.31821L0.879877 4.60885L0.165954 5.31821L0.879877 6.02758L1.58472 5.31821ZM14.9882 6.31821C15.5405 6.31821 15.9882 5.8705 15.9882 5.31821C15.9882 4.76593 15.5405 4.31821 14.9882 4.31821V6.31821ZM5.3477 0.169539L0.879877 4.60885L2.28956 6.02758L6.75738 1.58827L5.3477 0.169539ZM0.879877 6.02758L5.3477 10.4669L6.75738 9.04815L2.28956 4.60885L0.879877 6.02758ZM1.58472 6.31821H14.9882V4.31821H1.58472V6.31821Z"
-                      fill="#010101"></path>
-                  </svg>
-                </a>
+            <!-- grid -->
+            <div class="row g-5 mx-0">
+              <div class="col-lg-4">
+                <div class="productSwiperHover">
+                  <div class="bg-white shadow rounded-25 position-relative py-3">
+                    <!-- off -->
+                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <!--  -->
+                    <div class="px-3">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
+                    </div>
+                    <h6 class="fw-bold fs-15 mt-3 px-3">شهد عسل كندو سنتى(بدون موم)</h6>
+                    <p class="fs-12 text-muted mb-0 px-3">دسته بندی : شهد</p>
+                    <div class="px-3 pt-3 border-t-dash">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="d-flex gap-1 align-items-center mb-0 text-secondary">
+                          <span class="fw-bold fs-14 text-decoration-line-through">780,000</span>
+                          <span class="fs-10">تومان</span>
+                        </p>
+                        <p class="d-flex gap-1 align-items-center mb-0 text-main">
+                          <span class="fw-bold fs-20">730,000</span>
+                          <span class="fs-12">تومان</span>
+                        </p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
+                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                            <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
+                            </path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                          </svg>
+                        </a>
+                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                          محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="rounded-25 p-4 shadow border-b-main-6 d-flex flex-column flex-sm-row align-items-center gap-3 mb-5">
-              <img alt="logo" src="assets/img/blog3.png" class="img-fluid w-200 h-200 rounded-circle">
-              <div>
-                <p class="mb-3 text-main fs-15 text-center text-sm-end">عسل شناسی, ژل رویال</p>
-                <h5 class="font-bold fs-24 text-dark mb-4 text-center text-sm-end">آیا ژل رویال برای کودکان خوب است؟
-                </h5>
-                <p class="text-dark text-justify">
-                  جهت حفظ سلامتی، افزایش انرژی و رشد سالم کودکان، لازم است که به مصرف ویتامین‌ها و مکمل‌های خاصی که کودک
-                  به آن نیاز دارد، توجه ویژه ای داشته باشیم.
-                </p>
-                <a href="single-blog.html"
-                  class="d-flex align-items-center justify-content-center gap-sm-3 gap-2 w-sm-107 h-sm-33 h-51 w-133 rounded-pill bg-main mx-auto mx-sm-0">
-                  <p class="mb-0 text-black fs-14">ادامه</p>
-                  <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.58472 5.31821L0.879877 4.60885L0.165954 5.31821L0.879877 6.02758L1.58472 5.31821ZM14.9882 6.31821C15.5405 6.31821 15.9882 5.8705 15.9882 5.31821C15.9882 4.76593 15.5405 4.31821 14.9882 4.31821V6.31821ZM5.3477 0.169539L0.879877 4.60885L2.28956 6.02758L6.75738 1.58827L5.3477 0.169539ZM0.879877 6.02758L5.3477 10.4669L6.75738 9.04815L2.28956 4.60885L0.879877 6.02758ZM1.58472 6.31821H14.9882V4.31821H1.58472V6.31821Z"
-                      fill="#010101"></path>
-                  </svg>
-                </a>
+              <div class="col-lg-4">
+                <div class="productSwiperHover">
+                  <div class="bg-white shadow rounded-25 position-relative py-3">
+                    <!-- off -->
+                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <!--  -->
+                    <div class="px-3">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
+                    </div>
+                    <h6 class="fw-bold fs-15 mt-3 px-3">شهد عسل كندو سنتى(بدون موم)</h6>
+                    <p class="fs-12 text-muted mb-0 px-3">دسته بندی : شهد</p>
+                    <div class="px-3 pt-3 border-t-dash">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="d-flex gap-1 align-items-center mb-0 text-secondary">
+                          <span class="fw-bold fs-14 text-decoration-line-through">780,000</span>
+                          <span class="fs-10">تومان</span>
+                        </p>
+                        <p class="d-flex gap-1 align-items-center mb-0 text-main">
+                          <span class="fw-bold fs-20">730,000</span>
+                          <span class="fs-12">تومان</span>
+                        </p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
+                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                            <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
+                            </path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                          </svg>
+                        </a>
+                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                          محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="rounded-25 p-4 shadow border-b-main-6 d-flex flex-column flex-sm-row align-items-center gap-3 mb-5">
-              <img alt="logo" src="assets/img/blog3.png" class="img-fluid w-200 h-200 rounded-circle">
-              <div>
-                <p class="mb-3 text-main fs-15 text-center text-sm-end">عسل شناسی, ژل رویال</p>
-                <h5 class="font-bold fs-24 text-dark mb-4 text-center text-sm-end">آیا ژل رویال برای کودکان خوب است؟
-                </h5>
-                <p class="text-dark text-justify">
-                  جهت حفظ سلامتی، افزایش انرژی و رشد سالم کودکان، لازم است که به مصرف ویتامین‌ها و مکمل‌های خاصی که کودک
-                  به آن نیاز دارد، توجه ویژه ای داشته باشیم.
-                </p>
-                <a href="single-blog.html"
-                  class="d-flex align-items-center justify-content-center gap-sm-3 gap-2 w-sm-107 h-sm-33 h-51 w-133 rounded-pill bg-main mx-auto mx-sm-0">
-                  <p class="mb-0 text-black fs-14">ادامه</p>
-                  <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.58472 5.31821L0.879877 4.60885L0.165954 5.31821L0.879877 6.02758L1.58472 5.31821ZM14.9882 6.31821C15.5405 6.31821 15.9882 5.8705 15.9882 5.31821C15.9882 4.76593 15.5405 4.31821 14.9882 4.31821V6.31821ZM5.3477 0.169539L0.879877 4.60885L2.28956 6.02758L6.75738 1.58827L5.3477 0.169539ZM0.879877 6.02758L5.3477 10.4669L6.75738 9.04815L2.28956 4.60885L0.879877 6.02758ZM1.58472 6.31821H14.9882V4.31821H1.58472V6.31821Z"
-                      fill="#010101"></path>
-                  </svg>
-                </a>
+              <div class="col-lg-4">
+                <div class="productSwiperHover">
+                  <div class="bg-white shadow rounded-25 position-relative py-3">
+                    <!-- off -->
+                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <!--  -->
+                    <div class="px-3">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
+                    </div>
+                    <h6 class="fw-bold fs-15 mt-3 px-3">شهد عسل كندو سنتى(بدون موم)</h6>
+                    <p class="fs-12 text-muted mb-0 px-3">دسته بندی : شهد</p>
+                    <div class="px-3 pt-3 border-t-dash">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="d-flex gap-1 align-items-center mb-0 text-secondary">
+                          <span class="fw-bold fs-14 text-decoration-line-through">780,000</span>
+                          <span class="fs-10">تومان</span>
+                        </p>
+                        <p class="d-flex gap-1 align-items-center mb-0 text-main">
+                          <span class="fw-bold fs-20">730,000</span>
+                          <span class="fs-12">تومان</span>
+                        </p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
+                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                            <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
+                            </path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                          </svg>
+                        </a>
+                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                          محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="productSwiperHover">
+                  <div class="bg-white shadow rounded-25 position-relative py-3">
+                    <!-- off -->
+                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <!--  -->
+                    <div class="px-3">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
+                    </div>
+                    <h6 class="fw-bold fs-15 mt-3 px-3">شهد عسل كندو سنتى(بدون موم)</h6>
+                    <p class="fs-12 text-muted mb-0 px-3">دسته بندی : شهد</p>
+                    <div class="px-3 pt-3 border-t-dash">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="d-flex gap-1 align-items-center mb-0 text-secondary">
+                          <span class="fw-bold fs-14 text-decoration-line-through">780,000</span>
+                          <span class="fs-10">تومان</span>
+                        </p>
+                        <p class="d-flex gap-1 align-items-center mb-0 text-main">
+                          <span class="fw-bold fs-20">730,000</span>
+                          <span class="fs-12">تومان</span>
+                        </p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
+                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                            <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
+                            </path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                          </svg>
+                        </a>
+                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                          محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="productSwiperHover">
+                  <div class="bg-white shadow rounded-25 position-relative py-3">
+                    <!-- off -->
+                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <!--  -->
+                    <div class="px-3">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
+                    </div>
+                    <h6 class="fw-bold fs-15 mt-3 px-3">شهد عسل كندو سنتى(بدون موم)</h6>
+                    <p class="fs-12 text-muted mb-0 px-3">دسته بندی : شهد</p>
+                    <div class="px-3 pt-3 border-t-dash">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="d-flex gap-1 align-items-center mb-0 text-secondary">
+                          <span class="fw-bold fs-14 text-decoration-line-through">780,000</span>
+                          <span class="fs-10">تومان</span>
+                        </p>
+                        <p class="d-flex gap-1 align-items-center mb-0 text-main">
+                          <span class="fw-bold fs-20">730,000</span>
+                          <span class="fs-12">تومان</span>
+                        </p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
+                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                            <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
+                            </path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                          </svg>
+                        </a>
+                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                          محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="productSwiperHover">
+                  <div class="bg-white shadow rounded-25 position-relative py-3">
+                    <!-- off -->
+                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <!--  -->
+                    <div class="px-3">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
+                    </div>
+                    <h6 class="fw-bold fs-15 mt-3 px-3">شهد عسل كندو سنتى(بدون موم)</h6>
+                    <p class="fs-12 text-muted mb-0 px-3">دسته بندی : شهد</p>
+                    <div class="px-3 pt-3 border-t-dash">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="d-flex gap-1 align-items-center mb-0 text-secondary">
+                          <span class="fw-bold fs-14 text-decoration-line-through">780,000</span>
+                          <span class="fs-10">تومان</span>
+                        </p>
+                        <p class="d-flex gap-1 align-items-center mb-0 text-main">
+                          <span class="fw-bold fs-20">730,000</span>
+                          <span class="fs-12">تومان</span>
+                        </p>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
+                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                            <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
+                            </path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                          </svg>
+                        </a>
+                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                          محصول</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- pagination -->
