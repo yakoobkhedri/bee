@@ -385,24 +385,84 @@
               <a href="index.html" class="text-white">خانه</a>
               <span>></span>
               <h2 class="fs-24 mb-0">محصولات</h2>
-             </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- blog -->
+    <!-- products -->
     <section class="mt-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-xl-9">
+            <!-- filter -->
+            <div class="d-flex align-items-center gap-5">
+              <div class="d-flex align-items-center gap-3">
+                <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14.4997" cy="3.1091" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                  <circle cx="3.10714" cy="3.1091" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                  <circle cx="3.10714" cy="13.4665" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                  <circle cx="14.4997" cy="13.4665" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                  <circle cx="14.4997" cy="23.8239" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                  <circle cx="25.8928" cy="23.8239" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                  <circle cx="3.10714" cy="23.8239" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                  <circle cx="25.8928" cy="13.4665" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                  <circle cx="25.8928" cy="3.1091" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
+                </svg>
+                <h6 class="font-bold mb-0">مرتب سازی براساس</h6>
+              </div>
+              <div class="d-flex align-items-center gap-5 text-center text-main">
+                <div
+                  class="w-86 h-80 rounded-15 border-main cursor-pointer d-flex align-items-center justify-content-center">
+                  <div class="position-relative">
+                    <div class="w-22 h-22 rounded-5 border-main mx-auto mb-1 position-relative">
+                      <input name="sort" type="radio"
+                        class="cursor-pointer opacity-none position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0">
+                    </div>
+                    <p class="mb-0 fs-14 fw-bold">جدیدترین</p>
+                  </div>
+                </div>
+                <div
+                  class="w-86 h-80 rounded-15 border-main cursor-pointer d-flex align-items-center justify-content-center">
+                  <div class="position-relative">
+                    <div class="w-22 h-22 rounded-5 border-main mx-auto mb-1 position-relative">
+                      <input name="sort" type="radio"
+                        class="cursor-pointer opacity-none position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0">
+                    </div>
+                    <p class="mb-0 fs-14 fw-bold">ارزان ترین</p>
+                  </div>
+                </div>
+                <div
+                  class="w-86 h-80 rounded-15 border-main cursor-pointer d-flex align-items-center justify-content-center">
+                  <div class="position-relative">
+                    <div class="w-22 h-22 rounded-5 border-main mx-auto mb-1 position-relative">
+                      <input name="sort" type="radio"
+                        class="cursor-pointer opacity-none position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0">
+                    </div>
+                    <p class="mb-0 fs-14 fw-bold">محبوبیت</p>
+                  </div>
+                </div>
+                <div
+                  class="w-86 h-80 rounded-15 border-main cursor-pointer d-flex align-items-center justify-content-center">
+                  <div class="position-relative">
+                    <div class="w-22 h-22 rounded-5 border-main mx-auto mb-1 position-relative">
+                      <input name="sort" type="radio"
+                        class="cursor-pointer opacity-none position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0">
+                    </div>
+                    <p class="mb-0 fs-14 fw-bold">گران ترین</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- grid -->
-            <div class="row g-5 mx-0">
+            <div class="row g-5 mx-0 mt-5">
               <div class="col-lg-4">
                 <div class="productSwiperHover">
                   <div class="bg-white shadow rounded-25 position-relative py-3">
                     <!-- off -->
-                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <span
+                      class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
                     <!--  -->
                     <div class="px-3">
                       <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
@@ -421,15 +481,21 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
-                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                        <a href="cart.html"
+                          class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z"
+                              fill="#E0880F"></path>
                             <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
                             </path>
-                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round">
+                            </path>
                           </svg>
                         </a>
-                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                        <a href="single-product.html"
+                          class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
                           محصول</a>
                       </div>
                     </div>
@@ -440,7 +506,8 @@
                 <div class="productSwiperHover">
                   <div class="bg-white shadow rounded-25 position-relative py-3">
                     <!-- off -->
-                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <span
+                      class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
                     <!--  -->
                     <div class="px-3">
                       <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
@@ -459,15 +526,21 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
-                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                        <a href="cart.html"
+                          class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z"
+                              fill="#E0880F"></path>
                             <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
                             </path>
-                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round">
+                            </path>
                           </svg>
                         </a>
-                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                        <a href="single-product.html"
+                          class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
                           محصول</a>
                       </div>
                     </div>
@@ -478,7 +551,8 @@
                 <div class="productSwiperHover">
                   <div class="bg-white shadow rounded-25 position-relative py-3">
                     <!-- off -->
-                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <span
+                      class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
                     <!--  -->
                     <div class="px-3">
                       <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
@@ -497,15 +571,21 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
-                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                        <a href="cart.html"
+                          class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z"
+                              fill="#E0880F"></path>
                             <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
                             </path>
-                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round">
+                            </path>
                           </svg>
                         </a>
-                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                        <a href="single-product.html"
+                          class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
                           محصول</a>
                       </div>
                     </div>
@@ -516,7 +596,8 @@
                 <div class="productSwiperHover">
                   <div class="bg-white shadow rounded-25 position-relative py-3">
                     <!-- off -->
-                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <span
+                      class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
                     <!--  -->
                     <div class="px-3">
                       <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
@@ -535,15 +616,21 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
-                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                        <a href="cart.html"
+                          class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z"
+                              fill="#E0880F"></path>
                             <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
                             </path>
-                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round">
+                            </path>
                           </svg>
                         </a>
-                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                        <a href="single-product.html"
+                          class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
                           محصول</a>
                       </div>
                     </div>
@@ -554,7 +641,8 @@
                 <div class="productSwiperHover">
                   <div class="bg-white shadow rounded-25 position-relative py-3">
                     <!-- off -->
-                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <span
+                      class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
                     <!--  -->
                     <div class="px-3">
                       <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
@@ -573,15 +661,21 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
-                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                        <a href="cart.html"
+                          class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z"
+                              fill="#E0880F"></path>
                             <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
                             </path>
-                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round">
+                            </path>
                           </svg>
                         </a>
-                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                        <a href="single-product.html"
+                          class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
                           محصول</a>
                       </div>
                     </div>
@@ -592,7 +686,8 @@
                 <div class="productSwiperHover">
                   <div class="bg-white shadow rounded-25 position-relative py-3">
                     <!-- off -->
-                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <span
+                      class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
                     <!--  -->
                     <div class="px-3">
                       <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 -mt-71 mx-auto">
@@ -611,15 +706,21 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mt-2 gap-4 productLinks transition">
-                        <a href="cart.html" class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z" fill="#E0880F"></path>
+                        <a href="cart.html"
+                          class="rounded-20 bg-main-gradient shadow w-40 h-40 d-flex align-items-center justify-content-center position-relative">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                              d="M19.7808 10H20C20.5523 10 21 9.55228 21 9C21 8.44772 20.5523 8 20 8H4C3.44772 8 3 8.44772 3 9C3 9.55228 3.44772 10 4 10H4.21922C4.67809 10 5.07807 10.3123 5.18937 10.7575L6.62127 16.4851C6.84385 17.3754 7.64382 18 8.56155 18H15.4384C16.3562 18 17.1561 17.3754 17.3787 16.4851L18.8106 10.7575C18.9219 10.3123 19.3219 10 19.7808 10Z"
+                              fill="#E0880F"></path>
                             <path d="M8.5 3.5L6.5 6.5M15.5 3.5L17.5 6.5" stroke="#222222" stroke-linecap="round">
                             </path>
-                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round"></path>
+                            <path d="M10.5 14.5L9.5 11.5M13.5 14.5L14.5 11.5" stroke="#222222" stroke-linecap="round">
+                            </path>
                           </svg>
                         </a>
-                        <a href="single-product.html" class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
+                        <a href="single-product.html"
+                          class="flex-grow-1 bg-main fs-14 fw-bold rounded-pill shadow h-40 text-dark d-flex align-items-center justify-content-center">جزئیات
                           محصول</a>
                       </div>
                     </div>
@@ -653,125 +754,134 @@
             <form class="rounded-25 border border-2 p-4">
               <div class="d-flex align-items-center gap-2 p-3 rounded-10 bg-gray2 flex-shrink-0">
                 <input class="outline-none bg-transparent border-0 fs-14 w-100" placeholder="جستجو در بین مقالات ...">
-                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
-                  <ellipse cx="11.9167" cy="11" rx="6.5" ry="6" fill="#E0880F" stroke="#010101" stroke-width="1.2"></ellipse>
-                  <path d="M11.9167 8C11.49 8 11.0673 8.0776 10.673 8.22836C10.2787 8.37913 9.92044 8.6001 9.61865 8.87868C9.31686 9.15726 9.07747 9.48797 8.91414 9.85195C8.75081 10.2159 8.66675 10.606 8.66675 11" stroke="white" stroke-width="1.2" stroke-linecap="round"></path>
+                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="26" height="24"
+                  viewBox="0 0 26 24" fill="none">
+                  <ellipse cx="11.9167" cy="11" rx="6.5" ry="6" fill="#E0880F" stroke="#010101" stroke-width="1.2">
+                  </ellipse>
+                  <path
+                    d="M11.9167 8C11.49 8 11.0673 8.0776 10.673 8.22836C10.2787 8.37913 9.92044 8.6001 9.61865 8.87868C9.31686 9.15726 9.07747 9.48797 8.91414 9.85195C8.75081 10.2159 8.66675 10.606 8.66675 11"
+                    stroke="white" stroke-width="1.2" stroke-linecap="round"></path>
                   <path d="M21.6667 20L18.4167 17" stroke="#010101" stroke-width="1.2" stroke-linecap="round"></path>
                 </svg>
               </div>
             </form>
-            <!-- category -->
-            <div class="rounded-25 border border-2 p-4 mt-5">
-              <div class="bg-main -mt-46 h-40 mb-4 position-relative rounded-10 d-flex align-items-center justify-content-center gap-2 fs-14 font-bold">
-                <div class="bg-main position-absolute w-92 mx-auto h-9 end-0 start-0 rounded-t-25 opacity-80 -top-9"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M11 7H19" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M11 12H19" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M11 17H19" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
-                  <circle cx="5" cy="7" r="1" fill="#222222"/>
-                  <circle cx="5" cy="12" r="1" fill="#222222"/>
-                  <circle cx="5" cy="17" r="1" fill="#222222"/>
-                </svg>
-               <p class="mb-0">دسته بندی</p>
-              </div>
-              <ul class="mb-0 pe-0 list-unstyled border-dash-r-2">
-                <li class="mb-4 -mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">آرایشی و زیبایی</p>
-                  </a>
-                </li>
-                <li class="mb-4 -mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">تناسب اندام و تغذیه</p>
-                  </a>
-                </li>
-                <li class="mb-4 -mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">عسل شناسی</p>
-                  </a>
-                </li>
-                <li class="mb-4 -mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">مراقبت و سلامتی</p>
-                  </a>
-                </li>
-                <li class="-mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">ژل رویال</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- new blogس -->
-            <div class="rounded-25 border border-2 p-4 mt-5">
-              <div class="bg-main -mt-46 h-40 mb-4 position-relative rounded-10 d-flex align-items-center justify-content-center gap-2 fs-14 font-bold">
-                <div class="bg-main position-absolute w-92 mx-auto h-9 end-0 start-0 rounded-t-25 opacity-80 -top-9"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect x="5" y="4" width="14" height="17" rx="2" stroke="#222222" stroke-width="2"/>
-                  <path d="M9 9H15" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M9 13H15" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M9 17H13" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-               <p class="mb-0">جدیدترین مقالات</p>
-              </div>
-              <ul class="mb-0 pe-0 list-unstyled border-dash-r-2">
-                <li class="mb-4 -mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">خواص بره موم برای معده و نحوه مصرف آن چگونه است؟</p>
-                  </a>
-                </li>
-                <li class="mb-4 -mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">آیا ژل رویال برای کودکان خوب است؟</p>
-                  </a>
-                </li>
-                <li class="mb-4 -mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">طریقه مصرف بره موم چگونه است؟</p>
-                  </a>
-                </li>
-                <li class="mb-4 -mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">عسل بره موم چیست و چه خواصی دارد؟</p>
-                  </a>
-                </li>
-                <li class="-mr-6">
-                  <a class="d-flex align-items-center gap-2 fw-bold">
-                    <img alt="icon" src="assets/img/listicon.PNG" class="img-fluid w-10 h-10">
-                   <p class="mb-0 fs-12 text-secondary">انواع عسل و خواص آنها</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!--  -->
-            <div class="rounded-25 shadow mt-5 pb-4">
-             <div class="d-flex align-items-center justify-content-center p-4">
-               <img alt="product" src="assets/img/honey.png" class="img-fluid">
-             </div>
-             <a class="fs-15 font-bold text-black px-4 d-block">شهد عسل كندو سنتى(بدون موم)</a>
-             <div class="d-flex flex-wrap align-items-center justify-content-between mt-4 px-4 gap-2 border-t-dash pt-4">
-               <div class="d-flex align-items-center justify-content-center text-white gap-2 bg-main rounded-pill py-1 px-4">
-                 <p class="fs-20 font-bold mb-0">650,000</p>
-                 <p class="mb-0 fs-12">تومان</p>
-               </div>
-               <div class="d-flex align-items-center justify-content-center text-muted gap-2">
-                <p class="fs-15 font-bold mb-0 text-decoration-line-through">720,000</p>
-                <p class="mb-0 fs-12">تومان</p>
-              </div>
-             </div>
-            </div>
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- faq -->
+    <section class="mb-5">
+      <div class="container mt-xl-5 pt-xl-5">
+        <div class="row mt-5 pt-5 g-5 g-lg-4 mx-0">
+          <div class="col-lg-7 px-0 px-sm-3">
+            <div class="rounded-25 bg-second p-4 position-relative">
+              <!-- title -->
+              <div
+                class="rounded-t-25 bg-main h-80 mx-auto w-93 w-md-91 w-sm-84 start-0 end-0 position-absolute -top-80 right-23 fs-32 fs-sm-20 d-flex align-items-center justify-content-center font-bold">
+                سوالات متداول</div>
+              <div
+                class="rounded-t-25 bg-main opacity-80 h-20 mx-auto w-85 w-sm-75 position-absolute end-0 start-0 -top-97 right-53 fs-32 d-flex align-items-center justify-content-center font-bold">
+              </div>
+              <!--  -->
+              <div class="accordion-box">
+                <div class="accordion-items mb-4">
+                  <div
+                    class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                    <h5 class="fs-20 fs-sm-16 fw-bold mb-0">آیا عسل های شما 100 درصد طبیعی است ؟</h5>
+                    <div
+                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                      <svg class="transition active" width="11" height="7" viewBox="0 0 11 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="accordion-content px-md-4 active">
+                    <p class="py-4 text-justify text-white mx-md-5 mx-3 mb-0">تمامی عسل های عسل سرای قره چمن کاملا طبیعی
+                      بوده و
+                      پس از فرآوری هیچگونه ماده ای به آنها جهت تغییر طعم و مزه به محصولات اضافه نمیشود .</p>
+                  </div>
+                </div>
+                <div class="accordion-items mb-4">
+                  <div
+                    class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                    <h5 class="fs-20 fs-sm-16 fw-bold mb-0">آیا عسل های شما حرارت دیده است ؟</h5>
+                    <div
+                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                      <svg class="transition" width="11" height="7" viewBox="0 0 11 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="accordion-content px-md-4">
+                    <p class="py-4 text-justify text-white mx-md-5 mx-3 mb-0">تمامی عسل های عسل سرای قره چمن کاملا طبیعی
+                      بوده و
+                      پس از فرآوری هیچگونه ماده ای به آنها جهت تغییر طعم و مزه به محصولات اضافه نمیشود .</p>
+                  </div>
+                </div>
+                <div class="accordion-items mb-4">
+                  <div
+                    class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                    <h5 class="fs-20 fs-sm-16 fw-bold mb-0">بعد از مدتی عسل من رس (شکرک ) بسته... ؟</h5>
+                    <div
+                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                      <svg class="transition" width="11" height="7" viewBox="0 0 11 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="accordion-content px-md-4">
+                    <p class="py-4 text-justify text-white mx-md-5 mx-3 mb-0">تمامی عسل های عسل سرای قره چمن کاملا طبیعی
+                      بوده و
+                      پس از فرآوری هیچگونه ماده ای به آنها جهت تغییر طعم و مزه به محصولات اضافه نمیشود .</p>
+                  </div>
+                </div>
+                <div class="accordion-items">
+                  <div
+                    class="rounded-15 accordion-btn bg-main shadow pe-md-5 ps-4 p-4 cursor-pointer d-flex align-items-center justify-content-between">
+                    <h5 class="fs-20 fs-sm-16 fw-bold mb-0">سفارشات ما کی به دست ما خواهند رسید ؟</h5>
+                    <div
+                      class="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark rounded-circle w-23 h-23">
+                      <svg class="transition" width="11" height="7" viewBox="0 0 11 7" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5.5 6L10 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="accordion-content px-md-4">
+                    <p class="py-4 text-justify text-white mx-md-5 mx-3 mb-0">تمامی عسل های عسل سرای قره چمن کاملا طبیعی
+                      بوده و
+                      پس از فرآوری هیچگونه ماده ای به آنها جهت تغییر طعم و مزه به محصولات اضافه نمیشود .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 px-0 px-sm-3">
+            <div class="position-relative">
+              <img alt="faq" src="assets/img/faq.png" class="img-fluid rounded-25 w-100">
+              <!-- play icon -->
+              <a class="d-block position-absolute end-0 start-0 top-43 mx-auto w-96 h-96 rounded-circle">
+                <svg class="d-block mx-auto" width="96" height="96" viewBox="0 0 96 96" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M70.2111 47.1056L33.7367 28.8683C32.9388 28.4694 32 29.0496 32 29.9416V66.0584C32 66.9504 32.9388 67.5306 33.7367 67.1317L70.2111 48.8944C70.9482 48.5259 70.9482 47.4741 70.2111 47.1056Z"
+                    stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="48" cy="48" r="36" stroke="#222222" stroke-width="2" />
+                </svg>
+              </a>
+              <!--  -->
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
