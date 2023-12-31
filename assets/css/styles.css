@@ -43,6 +43,9 @@ a {
 .border-main {
     border: 1px solid #D98614;
 }
+.border-main-hover:hover {
+    border: 1px solid #D98614;
+}
 .border-b-main-6 {
     border-bottom: 6px solid #D98614;
 }
@@ -1174,7 +1177,9 @@ a {
 .w-138 {
     width: 138px;
 }
-
+.w-146 {
+    width: 146px;
+}
 .w-150 {
     width: 150px;
 }

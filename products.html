@@ -397,7 +397,7 @@
         <div class="row g-4">
           <div class="col-xl-9">
             <!-- filter -->
-            <div class="d-flex align-items-center gap-5">
+            <div class="d-flex flex-wrap align-items-center gap-5">
               <div class="d-flex align-items-center gap-3">
                 <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="14.4997" cy="3.1091" r="3.10714" fill="#E0880F" fill-opacity="0.77" />
@@ -412,43 +412,39 @@
                 </svg>
                 <h6 class="font-bold mb-0">مرتب سازی براساس</h6>
               </div>
-              <div class="d-flex align-items-center gap-5 text-center text-main">
+              <div class="d-flex flex-wrap align-items-center gap-5 text-center text-main">
                 <div
-                  class="w-86 h-80 rounded-15 border-main cursor-pointer d-flex align-items-center justify-content-center">
+                  class="w-86 h-80 rounded-15 border-main-hover transition cursor-pointer d-flex align-items-center justify-content-center">
                   <div class="position-relative">
-                    <div class="w-22 h-22 rounded-5 border-main mx-auto mb-1 position-relative">
-                      <input name="sort" type="radio"
-                        class="cursor-pointer opacity-none position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0">
+                   <div class="w-22 h-22 mx-auto mb-3 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
                     </div>
                     <p class="mb-0 fs-14 fw-bold">جدیدترین</p>
                   </div>
                 </div>
                 <div
-                  class="w-86 h-80 rounded-15 border-main cursor-pointer d-flex align-items-center justify-content-center">
+                  class="w-86 h-80 rounded-15 border-main-hover transition cursor-pointer d-flex align-items-center justify-content-center">
                   <div class="position-relative">
-                    <div class="w-22 h-22 rounded-5 border-main mx-auto mb-1 position-relative">
-                      <input name="sort" type="radio"
-                        class="cursor-pointer opacity-none position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0">
+                   <div class="w-22 h-22 mx-auto mb-3 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
                     </div>
                     <p class="mb-0 fs-14 fw-bold">ارزان ترین</p>
                   </div>
                 </div>
                 <div
-                  class="w-86 h-80 rounded-15 border-main cursor-pointer d-flex align-items-center justify-content-center">
+                  class="w-86 h-80 rounded-15 border-main-hover transition cursor-pointer d-flex align-items-center justify-content-center">
                   <div class="position-relative">
-                    <div class="w-22 h-22 rounded-5 border-main mx-auto mb-1 position-relative">
-                      <input name="sort" type="radio"
-                        class="cursor-pointer opacity-none position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0">
+                   <div class="w-22 h-22 mx-auto mb-3 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
                     </div>
                     <p class="mb-0 fs-14 fw-bold">محبوبیت</p>
                   </div>
                 </div>
                 <div
-                  class="w-86 h-80 rounded-15 border-main cursor-pointer d-flex align-items-center justify-content-center">
+                  class="w-86 h-80 rounded-15 border-main-hover transition cursor-pointer d-flex align-items-center justify-content-center">
                   <div class="position-relative">
-                    <div class="w-22 h-22 rounded-5 border-main mx-auto mb-1 position-relative">
-                      <input name="sort" type="radio"
-                        class="cursor-pointer opacity-none position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0">
+                   <div class="w-22 h-22 mx-auto mb-3 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
                     </div>
                     <p class="mb-0 fs-14 fw-bold">گران ترین</p>
                   </div>
@@ -752,19 +748,129 @@
           </div>
           <div class="col-xl-3">
             <form class="rounded-25 border border-2 p-4">
-              <div class="d-flex align-items-center gap-2 p-3 rounded-10 bg-gray2 flex-shrink-0">
-                <input class="outline-none bg-transparent border-0 fs-14 w-100" placeholder="جستجو در بین مقالات ...">
-                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="26" height="24"
-                  viewBox="0 0 26 24" fill="none">
-                  <ellipse cx="11.9167" cy="11" rx="6.5" ry="6" fill="#E0880F" stroke="#010101" stroke-width="1.2">
-                  </ellipse>
-                  <path
-                    d="M11.9167 8C11.49 8 11.0673 8.0776 10.673 8.22836C10.2787 8.37913 9.92044 8.6001 9.61865 8.87868C9.31686 9.15726 9.07747 9.48797 8.91414 9.85195C8.75081 10.2159 8.66675 10.606 8.66675 11"
-                    stroke="white" stroke-width="1.2" stroke-linecap="round"></path>
-                  <path d="M21.6667 20L18.4167 17" stroke="#010101" stroke-width="1.2" stroke-linecap="round"></path>
-                </svg>
+              <div class="d-flex align-items-center gap-2 rounded-10 overflow-hidden bg-gray2 flex-shrink-0">
+                <input class="outline-none bg-transparent border-0 fs-12 w-100 p-2"
+                  placeholder="جستجو در بین محصولات ...">
+                <input value="جستجو" class="bg-main fs-14 h-100 py-2 px-3 cursor-pointer border-0" type="submit">
+              </div>
+              <div class="mt-4 border-top border-2 pt-4">
+                <p class="fs-14">فیلتر بر اساس قیمت</p>
+                <input type="range" class="w-100">
+                <div class="d-flex align-items-center justify-content-between gap-3 mt-3 border-bottom pb-4">
+                  <input value="فیلتر" class="bg-main fs-14 w-73 h-40 d-block rounded-10 cursor-pointer border-0"
+                    type="submit">
+                  <div class="d-flex align-items-center gap-1 fs-12">
+                    <p class="mb-0 text-muted">قیمت:</p>
+                    <p class="mb-0 text-muted">۳۰۰ تومان</p>
+                    <p class="mb-0 text-muted">-</p>
+                    <p class="mb-0 text-muted">۹۲۰ تومان</p>
+                  </div>
+                </div>
+                <div
+                  class="bg-main mt-3 fs-14 w-full h-40 d-flex align-items-center justify-content-center rounded-10 cursor-pointer">
+                  موجودی و حراج
+                </div>
+                <div class="mt-4 border-bottom pb-4">
+                  <label class="d-flex align-items-center gap-3 fs-12 text-muted cursor-pointer mb-3">
+                    <div class="w-22 h-22 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
+                    </div>
+                    <p class="mb-0">فروش ویژه</p>
+                  </label>
+                  <label class="d-flex align-items-center gap-3 fs-12 text-muted cursor-pointer">
+                    <div class="w-22 h-22 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
+                    </div>
+                    <p class="mb-0">موجودی در انبار</p>
+                  </label>
+                </div>
+                <div
+                  class="bg-main mt-3 fs-14 w-full h-40 d-flex align-items-center justify-content-center rounded-10 cursor-pointer">
+                  دسته بندی
+                </div>
+                <div class="mt-4">
+                  <label class="d-flex align-items-center gap-3 fs-12 text-muted cursor-pointer mb-3">
+                    <div class="w-22 h-22 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
+                    </div>
+                    <p class="mb-0">عسل</p>
+                  </label>
+                  <label class="d-flex align-items-center gap-3 fs-12 text-muted cursor-pointer mb-3">
+                    <div class="w-22 h-22 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
+                    </div>
+                    <p class="mb-0">معجون</p>
+                  </label>
+                  <label class="d-flex align-items-center gap-3 fs-12 text-muted cursor-pointer mb-3">
+                    <div class="w-22 h-22 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
+                    </div>
+                    <p class="mb-0">گرده عسل</p>
+                  </label>
+                  <label class="d-flex align-items-center gap-3 fs-12 text-muted cursor-pointer mb-3">
+                    <div class="w-22 h-22 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
+                    </div>
+                    <p class="mb-0">روغن گوسفندی</p>
+                  </label>
+                  <label class="d-flex align-items-center gap-3 fs-12 text-muted cursor-pointer">
+                    <div class="w-22 h-22 rounded-5 cursor-pointer position-relative">
+                      <input type="checkbox" class="position-absolute form-check-input w-100 h-100 end-0 start-0 bottom-0 top-0">
+                    </div>
+                    <p class="mb-0">ژل رویال</p>
+                  </label>
+                </div>
               </div>
             </form>
+            <!-- swiper -->
+            <div class="swiper banner py-5 px-3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-next swiper-slide-prev">
+                  <div class="bg-white shadow rounded-25 position-relative pb-4 pt-3">
+                    <!-- off -->
+                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <!--  -->
+                    <div class="px-3">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 mx-auto">
+                    </div>
+                    <h6 class="fw-bold fs-12 mt-3 px-3">شهد عسل كندو سنتى(بدون موم)</h6>
+                    <p class="d-flex gap-1 mx-auto align-items-center justify-content-center mb-0 mt-3 w-146 h-34 text-white bg-main rounded-pill">
+                      <span class="fw-bold fs-20">730,000</span>
+                      <span class="fs-12">تومان</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-next swiper-slide-prev">
+                  <div class="bg-white shadow rounded-25 position-relative pb-4 pt-3">
+                    <!-- off -->
+                    <span class="fw-bold text-dark position-absolute -top-9 start-0 mb-4 bg-main w-53 h-36 d-flex align-items-center justify-content-center rounded-15 rounded-bl-0">10%</span>
+                    <!--  -->
+                    <div class="px-3">
+                      <img alt="product" src="assets/img/product.png" class="img-fluid d-block h-196 mx-auto">
+                    </div>
+                    <h6 class="fw-bold fs-12 mt-3 px-3">شهد عسل كندو سنتى(بدون موم)</h6>
+                    <p class="d-flex gap-1 mx-auto align-items-center justify-content-center mb-0 mt-3 w-146 h-34 text-white bg-main rounded-pill">
+                      <span class="fw-bold fs-20">730,000</span>
+                      <span class="fs-12">تومان</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-button-next left-16 shadow w-38 h-38 bg-white rounded-circle d-flex align-items-center justify-content-center">
+                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.613 2.58203L2.12695 12.4272L13.613 22.2725" stroke="#1B190F" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div
+                class="swiper-button-prev right-16 shadow w-38 h-38 bg-white rounded-circle d-flex align-items-center justify-content-center">
+                <svg width="17" height="25" viewBox="0 0 17 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.88649 22.1152L14.3726 12.27L2.88649 2.4248" stroke="#1B190F" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -772,7 +878,7 @@
 
     <!-- faq -->
     <section class="mb-5">
-      <div class="container mt-xl-5 pt-xl-5">
+      <div class="container">
         <div class="row mt-5 pt-5 g-5 g-lg-4 mx-0">
           <div class="col-lg-7 px-0 px-sm-3">
             <div class="rounded-25 bg-second p-4 position-relative">
