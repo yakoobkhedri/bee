@@ -301,12 +301,20 @@ a {
 .-top-25 {
     top: -25px;
 }
-
+.-top-23 {
+    top: -23px;
+}
+.-top-17{
+    top: -17px;
+}
 .-top-9 {
     top: -9px;
 }
 
 /* bottom */
+.-bottom-50 {
+    bottom: -50px;
+}
 
 .-bottom-40 {
     bottom: -40px;
@@ -545,7 +553,9 @@ a {
 .fs-40 {
     font-size: 40px;
 }
-
+.fs-49 {
+    font-size: 49px;
+}
 .fs-64 {
     font-size: 64px;
 }
@@ -1184,7 +1194,7 @@ a {
 }
 
 /* header */
-header ul a.active,header ul li:hover a,header ul li:hover a path,header ul li a.active path{
+header .menu a.active,header .menu li:hover > a,header .menu li:hover > a path,header .menu li > a.active path{
     color: #e0880f!important;
     stroke: #e0880f;
     fill:#e0880f;
@@ -1503,12 +1513,18 @@ footer {
         width: 0;
         height: 0;
     }
+    .fs-md-12 {
+        font-size: 12px;
+    }
     .fs-md-20 {
         font-size: 20px;
     }
 
     .w-md-91 {
         width: 91%;
+    }
+    .w-md-152{
+        width: 152px;
     }
     #myTabContent .tab-pane::before{
         display: none;

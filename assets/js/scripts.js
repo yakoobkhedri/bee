@@ -41,7 +41,6 @@ dropdown1.forEach((item) => {
 dropdowns.addEventListener('mouseleave', function () {
   dropdowns.classList.remove('active');
 })
-
 // swiper
 var banner = new Swiper(".banner", {
   loop: true,
