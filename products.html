@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/audioplayer.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/rSlider.min.css'>
   <title>لیست محصولات</title>
 </head>
 
@@ -372,7 +373,7 @@
 
   <!-- main -->
 
-  <main class="pb-5 mb-5">
+  <main>
 
     <!-- banner -->
     <section class="mt-5">
@@ -754,12 +755,12 @@
                 <input value="جستجو" class="bg-main fs-14 h-100 py-2 px-3 cursor-pointer border-0" type="submit">
               </div>
               <div class="mt-4 border-top border-2 pt-4">
-                <p class="fs-14">فیلتر بر اساس قیمت</p>
-                <input type="range" class="w-100 form-range">
+                <p class="fs-14 mb-5">فیلتر بر اساس قیمت</p>
+                <input type="text" id="slider" class="slider" class="slider w-100">
                 <div class="d-flex align-items-center justify-content-between gap-3 mt-3 border-bottom pb-4">
-                  <input value="فیلتر" class="bg-main fs-14 w-73 h-40 d-block rounded-10 cursor-pointer border-0"
+                  <input value="فیلتر" class="bg-main fs-14 w-100 h-40 d-block rounded-10 cursor-pointer border-0"
                     type="submit">
-                  <div class="d-flex align-items-center gap-1 fs-12">
+                  <div class="d-none align-items-center gap-1 fs-12">
                     <p class="mb-0 text-muted">قیمت:</p>
                     <p class="mb-0 text-muted">۳۰۰ تومان</p>
                     <p class="mb-0 text-muted">-</p>
@@ -992,9 +993,9 @@
 
     <!-- social -->
     <section>
-      <div class="container mt-5">
+      <div class="container">
         <div
-          class="bg-main rounded-t-54 px-md-5 px-2 pt-4 mx-auto w-100 h-727 -mb-656 -mb-lg-466 -mb-sm-616 d-flex flex-column flex-lg-row justify-content-lg-between gap-sm-5 gap-3">
+          class="bg-main rounded-t-54 px-md-5 px-2 py-4 mx-auto w-96 w-sm-80 d-flex flex-column flex-lg-row justify-content-lg-between gap-sm-5 gap-3">
           <a
             class="d-flex flex-lg-grow-1 shadow align-items-center justify-content-end rounded-pill bg-main2 p-4 ps-2 ps-sm-4 h-116 h-sm-56 gap-sm-4 gap-2">
             <p class="mb-0 fs-26 fs-sm-20 font-bold text-dark">asal_gharacheman</p>
@@ -1022,7 +1023,7 @@
   </main>
 
   <!-- footer -->
-  <footer class="h-564 h-xl-auto mt-5 rounded-t-54 position-relative opacity-96 pb-xl-0">
+  <footer class="h-564 h-xl-auto rounded-t-54 position-relative opacity-96 pb-xl-0">
     <!-- overlay -->
     <div class="footerOverlay"></div>
     <!--  -->
@@ -1220,8 +1221,24 @@
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
   <script src="assets/js/audioplayer.js"></script>
+  <script src="assets/js/rSlider.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var mySlider = new rSlider({
+    target: '#slider',
+    values: [300, 400, 500, 600,700,800,900,1000,1500,2000,2500,3000,3500,4000,4500,5000],
+    range: true,
+    set:    null, // an array of preselected values
+    width:    null,
+    scale:    false,
+    labels:   false,
+    tooltip:  true,
+    step:     null, // step size
+    disabled: false, // is disabled?
+    onChange: null // callback
+});
+  </script>
 </body>
 
 </html>
