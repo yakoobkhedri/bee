@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/audioplayer.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/fancybox.css'>
   <title>جزئیات محصول</title>
 </head>
 
@@ -349,65 +350,257 @@
         <!-- product gallery && add to cart -->
         <div class="row align-items-center mx-0 g-4">
           <div class="col-xl-6 h-100">
-            <div class="row align-items-center g-4 d-none d-lg-flex h-100">
-              <div class="col-lg-9 h-100">
-                <div
-                  class="h-100 position-relative bg-white rounded-25 shadow d-flex align-items-center justify-content-center">
-                  <div class="position-absolute d-flex flex-column align-items-center gap-4 top-0 end-0 m-4">
-                    <svg class="cursor-pointer" width="22" height="17" viewBox="0 0 22 17" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M2.91979 10.537L10.6883 16.605L10.6883 16.605C10.8771 16.7525 10.9715 16.8262 11.0768 16.8516C11.1538 16.8702 11.2342 16.8702 11.3112 16.8516C11.4165 16.8262 11.5109 16.7525 11.6997 16.605L11.6997 16.605L19.4682 10.537C22.1316 8.45661 22.4394 4.54067 20.1338 2.06971C17.7835 -0.449065 13.6664 0.0259259 11.9515 3.0137L11.777 3.31764C11.5187 3.76774 10.8694 3.76774 10.611 3.31764L10.4366 3.0137C8.72159 0.0259259 4.60447 -0.449065 2.25423 2.06971C-0.0514029 4.54067 0.256407 8.45661 2.91979 10.537Z"
-                        fill="#E0880F" />
-                    </svg>
-                    <a>
-                      <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4.37012" y="3" width="21.6477" height="18" rx="2" fill="#E0880F" />
+            <!-- Swiper -->
+            <div class="d-none d-lg-block">
+              <div style="
+               --swiper-navigation-color: #fff;
+               --swiper-pagination-color: #fff;
+             " class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide position-relative">
+                    <div class="position-absolute d-flex flex-column align-items-center gap-4 top-0 end-0 m-4">
+                      <svg class="cursor-pointer" width="22" height="17" viewBox="0 0 22 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
-                          d="M21.2075 9L17.2946 13.8804C16.8592 14.4234 16.0161 14.3667 15.6574 13.7702L14.7311 12.2298C14.3725 11.6333 13.5293 11.5766 13.0939 12.1196L9.18101 17"
-                          stroke="#222222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </a>
-                    <a>
-                      <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.867188 0H30.9335V25H0.867188V0Z" fill="white" fill-opacity="0.01" />
-                        <path d="M19.6587 7.07227L11.728 11.0675" stroke="black" stroke-width="1.5"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M11.728 13.8379L20.0842 17.9436" stroke="black" stroke-width="1.5"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                          d="M22.7906 8.33529C24.5203 8.33529 25.9225 7.16935 25.9225 5.73112C25.9225 4.29288 24.5203 3.12695 22.7906 3.12695C21.0609 3.12695 19.6587 4.29288 19.6587 5.73112C19.6587 7.16935 21.0609 8.33529 22.7906 8.33529Z"
-                          fill="#E0880F" />
-                        <path
-                          d="M9.01032 15.1048C10.74 15.1048 12.1422 13.9389 12.1422 12.5007C12.1422 11.0624 10.74 9.89648 9.01032 9.89648C7.28063 9.89648 5.87842 11.0624 5.87842 12.5007C5.87842 13.9389 7.28063 15.1048 9.01032 15.1048Z"
-                          fill="#E0880F" />
-                        <path
-                          d="M22.7906 16.668C24.5203 16.668 25.9225 17.8339 25.9225 19.2721C25.9225 20.7104 24.5203 21.8763 22.7906 21.8763C21.0609 21.8763 19.6587 20.7104 19.6587 19.2721C19.6587 17.8339 21.0609 16.668 22.7906 16.668Z"
+                          d="M2.91979 10.537L10.6883 16.605L10.6883 16.605C10.8771 16.7525 10.9715 16.8262 11.0768 16.8516C11.1538 16.8702 11.2342 16.8702 11.3112 16.8516C11.4165 16.8262 11.5109 16.7525 11.6997 16.605L11.6997 16.605L19.4682 10.537C22.1316 8.45661 22.4394 4.54067 20.1338 2.06971C17.7835 -0.449065 13.6664 0.0259259 11.9515 3.0137L11.777 3.31764C11.5187 3.76774 10.8694 3.76774 10.611 3.31764L10.4366 3.0137C8.72159 0.0259259 4.60447 -0.449065 2.25423 2.06971C-0.0514029 4.54067 0.256407 8.45661 2.91979 10.537Z"
                           fill="#E0880F" />
                       </svg>
-                    </a>
+                      <a>
+                        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.37012" y="3" width="21.6477" height="18" rx="2" fill="#E0880F" />
+                          <path
+                            d="M21.2075 9L17.2946 13.8804C16.8592 14.4234 16.0161 14.3667 15.6574 13.7702L14.7311 12.2298C14.3725 11.6333 13.5293 11.5766 13.0939 12.1196L9.18101 17"
+                            stroke="#222222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a>
+                        <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.867188 0H30.9335V25H0.867188V0Z" fill="white" fill-opacity="0.01" />
+                          <path d="M19.6587 7.07227L11.728 11.0675" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.728 13.8379L20.0842 17.9436" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M22.7906 8.33529C24.5203 8.33529 25.9225 7.16935 25.9225 5.73112C25.9225 4.29288 24.5203 3.12695 22.7906 3.12695C21.0609 3.12695 19.6587 4.29288 19.6587 5.73112C19.6587 7.16935 21.0609 8.33529 22.7906 8.33529Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M9.01032 15.1048C10.74 15.1048 12.1422 13.9389 12.1422 12.5007C12.1422 11.0624 10.74 9.89648 9.01032 9.89648C7.28063 9.89648 5.87842 11.0624 5.87842 12.5007C5.87842 13.9389 7.28063 15.1048 9.01032 15.1048Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M22.7906 16.668C24.5203 16.668 25.9225 17.8339 25.9225 19.2721C25.9225 20.7104 24.5203 21.8763 22.7906 21.8763C21.0609 21.8763 19.6587 20.7104 19.6587 19.2721C19.6587 17.8339 21.0609 16.668 22.7906 16.668Z"
+                            fill="#E0880F" />
+                        </svg>
+                      </a>
+                    </div>
+                    <img src="assets/img/1.jpg" class="img-fluid w-75 mx-auto d-block" />
                   </div>
-                  <img alt="bigImg" id="bigImg" src="assets/img/asal.png" class="img-fluid w-75 d-block mx-auto">
+                  <div class="swiper-slide position-relative">
+                    <div class="position-absolute d-flex flex-column align-items-center gap-4 top-0 end-0 m-4">
+                      <svg class="cursor-pointer" width="22" height="17" viewBox="0 0 22 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2.91979 10.537L10.6883 16.605L10.6883 16.605C10.8771 16.7525 10.9715 16.8262 11.0768 16.8516C11.1538 16.8702 11.2342 16.8702 11.3112 16.8516C11.4165 16.8262 11.5109 16.7525 11.6997 16.605L11.6997 16.605L19.4682 10.537C22.1316 8.45661 22.4394 4.54067 20.1338 2.06971C17.7835 -0.449065 13.6664 0.0259259 11.9515 3.0137L11.777 3.31764C11.5187 3.76774 10.8694 3.76774 10.611 3.31764L10.4366 3.0137C8.72159 0.0259259 4.60447 -0.449065 2.25423 2.06971C-0.0514029 4.54067 0.256407 8.45661 2.91979 10.537Z"
+                          fill="#E0880F" />
+                      </svg>
+                      <a>
+                        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.37012" y="3" width="21.6477" height="18" rx="2" fill="#E0880F" />
+                          <path
+                            d="M21.2075 9L17.2946 13.8804C16.8592 14.4234 16.0161 14.3667 15.6574 13.7702L14.7311 12.2298C14.3725 11.6333 13.5293 11.5766 13.0939 12.1196L9.18101 17"
+                            stroke="#222222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a>
+                        <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.867188 0H30.9335V25H0.867188V0Z" fill="white" fill-opacity="0.01" />
+                          <path d="M19.6587 7.07227L11.728 11.0675" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.728 13.8379L20.0842 17.9436" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M22.7906 8.33529C24.5203 8.33529 25.9225 7.16935 25.9225 5.73112C25.9225 4.29288 24.5203 3.12695 22.7906 3.12695C21.0609 3.12695 19.6587 4.29288 19.6587 5.73112C19.6587 7.16935 21.0609 8.33529 22.7906 8.33529Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M9.01032 15.1048C10.74 15.1048 12.1422 13.9389 12.1422 12.5007C12.1422 11.0624 10.74 9.89648 9.01032 9.89648C7.28063 9.89648 5.87842 11.0624 5.87842 12.5007C5.87842 13.9389 7.28063 15.1048 9.01032 15.1048Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M22.7906 16.668C24.5203 16.668 25.9225 17.8339 25.9225 19.2721C25.9225 20.7104 24.5203 21.8763 22.7906 21.8763C21.0609 21.8763 19.6587 20.7104 19.6587 19.2721C19.6587 17.8339 21.0609 16.668 22.7906 16.668Z"
+                            fill="#E0880F" />
+                        </svg>
+                      </a>
+                    </div>
+                    <img src="assets/img/2.jpg" class="img-fluid w-75 mx-auto d-block" />
+                  </div>
+                  <div class="swiper-slide position-relative">
+                    <div class="position-absolute d-flex flex-column align-items-center gap-4 top-0 end-0 m-4">
+                      <svg class="cursor-pointer" width="22" height="17" viewBox="0 0 22 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2.91979 10.537L10.6883 16.605L10.6883 16.605C10.8771 16.7525 10.9715 16.8262 11.0768 16.8516C11.1538 16.8702 11.2342 16.8702 11.3112 16.8516C11.4165 16.8262 11.5109 16.7525 11.6997 16.605L11.6997 16.605L19.4682 10.537C22.1316 8.45661 22.4394 4.54067 20.1338 2.06971C17.7835 -0.449065 13.6664 0.0259259 11.9515 3.0137L11.777 3.31764C11.5187 3.76774 10.8694 3.76774 10.611 3.31764L10.4366 3.0137C8.72159 0.0259259 4.60447 -0.449065 2.25423 2.06971C-0.0514029 4.54067 0.256407 8.45661 2.91979 10.537Z"
+                          fill="#E0880F" />
+                      </svg>
+                      <a>
+                        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.37012" y="3" width="21.6477" height="18" rx="2" fill="#E0880F" />
+                          <path
+                            d="M21.2075 9L17.2946 13.8804C16.8592 14.4234 16.0161 14.3667 15.6574 13.7702L14.7311 12.2298C14.3725 11.6333 13.5293 11.5766 13.0939 12.1196L9.18101 17"
+                            stroke="#222222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a>
+                        <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.867188 0H30.9335V25H0.867188V0Z" fill="white" fill-opacity="0.01" />
+                          <path d="M19.6587 7.07227L11.728 11.0675" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.728 13.8379L20.0842 17.9436" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M22.7906 8.33529C24.5203 8.33529 25.9225 7.16935 25.9225 5.73112C25.9225 4.29288 24.5203 3.12695 22.7906 3.12695C21.0609 3.12695 19.6587 4.29288 19.6587 5.73112C19.6587 7.16935 21.0609 8.33529 22.7906 8.33529Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M9.01032 15.1048C10.74 15.1048 12.1422 13.9389 12.1422 12.5007C12.1422 11.0624 10.74 9.89648 9.01032 9.89648C7.28063 9.89648 5.87842 11.0624 5.87842 12.5007C5.87842 13.9389 7.28063 15.1048 9.01032 15.1048Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M22.7906 16.668C24.5203 16.668 25.9225 17.8339 25.9225 19.2721C25.9225 20.7104 24.5203 21.8763 22.7906 21.8763C21.0609 21.8763 19.6587 20.7104 19.6587 19.2721C19.6587 17.8339 21.0609 16.668 22.7906 16.668Z"
+                            fill="#E0880F" />
+                        </svg>
+                      </a>
+                    </div>
+                    <img src="assets/img/1.jpg" class="img-fluid w-75 mx-auto d-block" />
+                  </div>
+                  <div class="swiper-slide position-relative">
+                    <div class="position-absolute d-flex flex-column align-items-center gap-4 top-0 end-0 m-4">
+                      <svg class="cursor-pointer" width="22" height="17" viewBox="0 0 22 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2.91979 10.537L10.6883 16.605L10.6883 16.605C10.8771 16.7525 10.9715 16.8262 11.0768 16.8516C11.1538 16.8702 11.2342 16.8702 11.3112 16.8516C11.4165 16.8262 11.5109 16.7525 11.6997 16.605L11.6997 16.605L19.4682 10.537C22.1316 8.45661 22.4394 4.54067 20.1338 2.06971C17.7835 -0.449065 13.6664 0.0259259 11.9515 3.0137L11.777 3.31764C11.5187 3.76774 10.8694 3.76774 10.611 3.31764L10.4366 3.0137C8.72159 0.0259259 4.60447 -0.449065 2.25423 2.06971C-0.0514029 4.54067 0.256407 8.45661 2.91979 10.537Z"
+                          fill="#E0880F" />
+                      </svg>
+                      <a>
+                        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.37012" y="3" width="21.6477" height="18" rx="2" fill="#E0880F" />
+                          <path
+                            d="M21.2075 9L17.2946 13.8804C16.8592 14.4234 16.0161 14.3667 15.6574 13.7702L14.7311 12.2298C14.3725 11.6333 13.5293 11.5766 13.0939 12.1196L9.18101 17"
+                            stroke="#222222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a>
+                        <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.867188 0H30.9335V25H0.867188V0Z" fill="white" fill-opacity="0.01" />
+                          <path d="M19.6587 7.07227L11.728 11.0675" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.728 13.8379L20.0842 17.9436" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M22.7906 8.33529C24.5203 8.33529 25.9225 7.16935 25.9225 5.73112C25.9225 4.29288 24.5203 3.12695 22.7906 3.12695C21.0609 3.12695 19.6587 4.29288 19.6587 5.73112C19.6587 7.16935 21.0609 8.33529 22.7906 8.33529Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M9.01032 15.1048C10.74 15.1048 12.1422 13.9389 12.1422 12.5007C12.1422 11.0624 10.74 9.89648 9.01032 9.89648C7.28063 9.89648 5.87842 11.0624 5.87842 12.5007C5.87842 13.9389 7.28063 15.1048 9.01032 15.1048Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M22.7906 16.668C24.5203 16.668 25.9225 17.8339 25.9225 19.2721C25.9225 20.7104 24.5203 21.8763 22.7906 21.8763C21.0609 21.8763 19.6587 20.7104 19.6587 19.2721C19.6587 17.8339 21.0609 16.668 22.7906 16.668Z"
+                            fill="#E0880F" />
+                        </svg>
+                      </a>
+                    </div>
+                    <img src="assets/img/2.jpg" class="img-fluid w-75 mx-auto d-block" />
+                  </div>
+                  <div class="swiper-slide position-relative">
+                    <div class="position-absolute d-flex flex-column align-items-center gap-4 top-0 end-0 m-4">
+                      <svg class="cursor-pointer" width="22" height="17" viewBox="0 0 22 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2.91979 10.537L10.6883 16.605L10.6883 16.605C10.8771 16.7525 10.9715 16.8262 11.0768 16.8516C11.1538 16.8702 11.2342 16.8702 11.3112 16.8516C11.4165 16.8262 11.5109 16.7525 11.6997 16.605L11.6997 16.605L19.4682 10.537C22.1316 8.45661 22.4394 4.54067 20.1338 2.06971C17.7835 -0.449065 13.6664 0.0259259 11.9515 3.0137L11.777 3.31764C11.5187 3.76774 10.8694 3.76774 10.611 3.31764L10.4366 3.0137C8.72159 0.0259259 4.60447 -0.449065 2.25423 2.06971C-0.0514029 4.54067 0.256407 8.45661 2.91979 10.537Z"
+                          fill="#E0880F" />
+                      </svg>
+                      <a>
+                        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.37012" y="3" width="21.6477" height="18" rx="2" fill="#E0880F" />
+                          <path
+                            d="M21.2075 9L17.2946 13.8804C16.8592 14.4234 16.0161 14.3667 15.6574 13.7702L14.7311 12.2298C14.3725 11.6333 13.5293 11.5766 13.0939 12.1196L9.18101 17"
+                            stroke="#222222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a>
+                        <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.867188 0H30.9335V25H0.867188V0Z" fill="white" fill-opacity="0.01" />
+                          <path d="M19.6587 7.07227L11.728 11.0675" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.728 13.8379L20.0842 17.9436" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M22.7906 8.33529C24.5203 8.33529 25.9225 7.16935 25.9225 5.73112C25.9225 4.29288 24.5203 3.12695 22.7906 3.12695C21.0609 3.12695 19.6587 4.29288 19.6587 5.73112C19.6587 7.16935 21.0609 8.33529 22.7906 8.33529Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M9.01032 15.1048C10.74 15.1048 12.1422 13.9389 12.1422 12.5007C12.1422 11.0624 10.74 9.89648 9.01032 9.89648C7.28063 9.89648 5.87842 11.0624 5.87842 12.5007C5.87842 13.9389 7.28063 15.1048 9.01032 15.1048Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M22.7906 16.668C24.5203 16.668 25.9225 17.8339 25.9225 19.2721C25.9225 20.7104 24.5203 21.8763 22.7906 21.8763C21.0609 21.8763 19.6587 20.7104 19.6587 19.2721C19.6587 17.8339 21.0609 16.668 22.7906 16.668Z"
+                            fill="#E0880F" />
+                        </svg>
+                      </a>
+                    </div>
+                    <img src="assets/img/1.jpg" class="img-fluid w-75 mx-auto d-block" />
+                  </div>
+                  <div class="swiper-slide position-relative">
+                    <div class="position-absolute d-flex flex-column align-items-center gap-4 top-0 end-0 m-4">
+                      <svg class="cursor-pointer" width="22" height="17" viewBox="0 0 22 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2.91979 10.537L10.6883 16.605L10.6883 16.605C10.8771 16.7525 10.9715 16.8262 11.0768 16.8516C11.1538 16.8702 11.2342 16.8702 11.3112 16.8516C11.4165 16.8262 11.5109 16.7525 11.6997 16.605L11.6997 16.605L19.4682 10.537C22.1316 8.45661 22.4394 4.54067 20.1338 2.06971C17.7835 -0.449065 13.6664 0.0259259 11.9515 3.0137L11.777 3.31764C11.5187 3.76774 10.8694 3.76774 10.611 3.31764L10.4366 3.0137C8.72159 0.0259259 4.60447 -0.449065 2.25423 2.06971C-0.0514029 4.54067 0.256407 8.45661 2.91979 10.537Z"
+                          fill="#E0880F" />
+                      </svg>
+                      <a>
+                        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.37012" y="3" width="21.6477" height="18" rx="2" fill="#E0880F" />
+                          <path
+                            d="M21.2075 9L17.2946 13.8804C16.8592 14.4234 16.0161 14.3667 15.6574 13.7702L14.7311 12.2298C14.3725 11.6333 13.5293 11.5766 13.0939 12.1196L9.18101 17"
+                            stroke="#222222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a>
+                        <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.867188 0H30.9335V25H0.867188V0Z" fill="white" fill-opacity="0.01" />
+                          <path d="M19.6587 7.07227L11.728 11.0675" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.728 13.8379L20.0842 17.9436" stroke="black" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M22.7906 8.33529C24.5203 8.33529 25.9225 7.16935 25.9225 5.73112C25.9225 4.29288 24.5203 3.12695 22.7906 3.12695C21.0609 3.12695 19.6587 4.29288 19.6587 5.73112C19.6587 7.16935 21.0609 8.33529 22.7906 8.33529Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M9.01032 15.1048C10.74 15.1048 12.1422 13.9389 12.1422 12.5007C12.1422 11.0624 10.74 9.89648 9.01032 9.89648C7.28063 9.89648 5.87842 11.0624 5.87842 12.5007C5.87842 13.9389 7.28063 15.1048 9.01032 15.1048Z"
+                            fill="#E0880F" />
+                          <path
+                            d="M22.7906 16.668C24.5203 16.668 25.9225 17.8339 25.9225 19.2721C25.9225 20.7104 24.5203 21.8763 22.7906 21.8763C21.0609 21.8763 19.6587 20.7104 19.6587 19.2721C19.6587 17.8339 21.0609 16.668 22.7906 16.668Z"
+                            fill="#E0880F" />
+                        </svg>
+                      </a>
+                    </div>
+                    <img src="assets/img/2.jpg" class="img-fluid w-75 mx-auto d-block" />
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-3">
-                <div class="d-flex gap-4 flex-lg-column">
-                  <div
-                    class="smallImgs cursor-pointer w-auto h-141 bg-white rounded-20 shadow d-flex align-items-center justify-content-center">
-                    <img alt="smallImg" src="assets/img/asal.png" class="img-fluid w-50 d-block mx-auto">
-                  </div>
-                  <div
-                    class="smallImgs cursor-pointer w-auto h-141 bg-white rounded-20 shadow d-flex align-items-center justify-content-center">
-                    <img alt="smallImg" src="assets/img/عسل-20.jpg" class="img-fluid w-50 d-block mx-auto">
-                  </div>
-                  <div
-                    class="cursor-pointer overflow-hidden position-relative w-auto h-141 bg-white rounded-20 shadow d-flex align-items-center justify-content-center">
-                    <img alt="smallImg" src="assets/img/عسل-22.jpg" class="img-fluid w-50 d-block mx-auto">
-                    <div
-                      class="bg-black-transparent d-flex align-items-center justify-content-center position-absolute top-0 end-0 start-0 bottom-0">
-                      <p class="text-white fw-medium mb-0 text-center px-4">عکس های بیشتر</p>
-                    </div>
-                  </div>
+              <div thumbsSlider="" class="swiper mySwiper mt-3">
+                <div class="swiper-wrapper">
+                  <a href="assets/img/1.jpg" data-fancybox="gallery" class="swiper-slide">
+                    <img src="assets/img/1.jpg" class="img-fluid" />
+                  </a>
+                  <a href="assets/img/2.jpg" data-fancybox="gallery" class="swiper-slide">
+                    <img src="assets/img/2.jpg" class="img-fluid" />
+                  </a>
+                  <a href="assets/img/1.jpg" data-fancybox="gallery" class="swiper-slide">
+                    <img src="assets/img/1.jpg" class="img-fluid" />
+                  </a>
+                  <a href="assets/img/2.jpg" data-fancybox="gallery" class="swiper-slide">
+                    <img src="assets/img/2.jpg" class="img-fluid" />
+                  </a>
+                  <a href="assets/img/1.jpg" data-fancybox="gallery" class="swiper-slide">
+                    <img src="assets/img/1.jpg" class="img-fluid" />
+                  </a>
+                  <a href="assets/img/2.jpg" data-fancybox="gallery" class="swiper-slide">
+                    <img src="assets/img/2.jpg" class="img-fluid" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -562,17 +755,17 @@
                 <div class="d-md-flex d-none align-items-center justify-content-between gap-4">
                   <div class="d-flex align-items-center gap-4">
                     <div
-                      class="w-73 h-73 rounded-20 bg-main d-flex align-items-center justify-content-center cursor-pointer">
+                      class="w-73 h-73 decrease rounded-20 bg-main d-flex align-items-center justify-content-center cursor-pointer">
                       <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M31.9639 21.5488L11.135 21.5488" stroke="#222222" stroke-width="3"
                           stroke-linecap="round" />
                       </svg>
                     </div>
-                    <input
-                      class="w-73 h-73 rounded-20 outline-none border-main bg-transparent text-center fs-20 font-bold"
+                    <input type="number" min="1"
+                      class="w-73 h-73 inputNumber rounded-20 outline-none border-main bg-transparent text-center fs-20 font-bold"
                       value="1">
                     <div
-                      class="w-73 h-73 rounded-20 bg-main d-flex align-items-center justify-content-center cursor-pointer">
+                      class="w-73 h-73 increase rounded-20 bg-main d-flex align-items-center justify-content-center cursor-pointer">
                       <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
                         <path d="M21.354 11.1348L21.354 31.9636" stroke="#222222" stroke-width="3"
                           stroke-linecap="round" />
@@ -588,35 +781,40 @@
                 <!-- add to cart mobile -->
                 <div class="position-fixed bottom-0 w-100 bg-dark rounded-t-25 py-4 end-0 start-0 d-md-none z-10">
                   <div class="container position-relative z-10 px-3">
-                     <div class="d-flex align-items-center justify-content-between gap-3">
+                    <div class="d-flex align-items-center justify-content-between gap-3">
                       <div>
                         <div class="d-flex align-items-center justify-content-center gap-2 text-main fw-bold mb-1">
-                         <p class="fs-24 mb-0">730,000</p>
-                         <p class="fs-20 mb-0">تومان</p>
+                          <p class="fs-24 mb-0">730,000</p>
+                          <p class="fs-20 mb-0">تومان</p>
                         </div>
                         <div class="d-flex align-items-center justify-content-center gap-3">
                           <div
-                            class="w-38 h-38 rounded-15 bg-main d-flex align-items-center justify-content-center cursor-pointer">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M16.9053 11.1055L5.65837 11.1055" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+                            class="w-38 h-38 decrease rounded-15 bg-main d-flex align-items-center justify-content-center cursor-pointer">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.9053 11.1055L5.65837 11.1055" stroke="#222222" stroke-width="3"
+                                stroke-linecap="round" />
                             </svg>
                           </div>
-                          <input
-                            class="w-38 h-38 rounded-15 outline-none border-main bg-white text-center fs-20 font-bold"
+                          <input type="number" min="1"
+                            class="w-38 h-38 inputNumber rounded-15 outline-none border-main bg-white text-center fs-20 font-bold"
                             value="1">
                           <div
-                            class="w-38 h-38 rounded-15 bg-main d-flex align-items-center justify-content-center cursor-pointer">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M11.2819 5.55273L11.2819 16.6576" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
-                              <path d="M16.9053 11.1055L5.65837 11.1055" stroke="#222222" stroke-width="3" stroke-linecap="round"/>
+                            class="w-38 h-38 increase rounded-15 bg-main d-flex align-items-center justify-content-center cursor-pointer">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11.2819 5.55273L11.2819 16.6576" stroke="#222222" stroke-width="3"
+                                stroke-linecap="round" />
+                              <path d="M16.9053 11.1055L5.65837 11.1055" stroke="#222222" stroke-width="3"
+                                stroke-linecap="round" />
                             </svg>
                           </div>
                         </div>
                       </div>
                       <a
-                      class="font-bold d-flex px-2 align-items-center justify-content-center h-73 rounded-20 bg-main text-dark flex-grow-1">افزودن
-                      به سبد خرید</a>
-                     </div>
+                        class="font-bold d-flex px-2 align-items-center justify-content-center h-73 rounded-20 bg-main text-dark flex-grow-1">افزودن
+                        به سبد خرید</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -626,11 +824,13 @@
         <!-- description && comments -->
         <div class="mt-5 mb-5">
           <div>
-            <ul class="nav nav-tabs font-bold px-4 gap-1 mb-0 border-bottom-0 justify-content-center justify-content-md-start fs-sm-9" id="myTab" role="tablist">
+            <ul
+              class="nav nav-tabs font-bold px-4 gap-1 mb-0 border-bottom-0 justify-content-center justify-content-md-start fs-sm-9"
+              id="myTab" role="tablist">
               <li class="nav-item w-md-152 w-sm-94" role="presentation">
-                <button class="nav-link w-190 w-md-152 w-sm-94 h-100 text-dark active" id="home-tab" data-bs-toggle="tab"
-                  data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                  aria-selected="true">توضیحات محصول</button>
+                <button class="nav-link w-190 w-md-152 w-sm-94 h-100 text-dark active" id="home-tab"
+                  data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                  aria-controls="home-tab-pane" aria-selected="true">توضیحات محصول</button>
               </li>
               <li class="nav-item w-md-152 w-sm-94" role="presentation">
                 <button class="nav-link w-190 w-md-152 w-sm-94 h-100 text-dark" id="profile-tab" data-bs-toggle="tab"
@@ -1694,11 +1894,13 @@
   </footer>
 
   <!-- Swiper JS -->
-  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
   <script src="assets/js/audioplayer.js"></script>
+  <script src="assets/js/fancybox.umd.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>

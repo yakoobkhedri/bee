@@ -91,6 +91,20 @@ var blog = new Swiper(".blog", {
     prevEl: ".swiper-button-prev",
   },
 });
+var mySwiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var mySwiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  thumbs: {
+    Swiper,
+  },
+});
 
 // filter
 
@@ -116,11 +130,11 @@ $(function () {
 
 // accordion
 
-let accordionBtn2=Array.from(document.getElementsByClassName('accordion-btn'));
+let accordionBtn2 = Array.from(document.getElementsByClassName('accordion-btn'));
 
-accordionBtn2.forEach((item)=>{
-  item.addEventListener('click',function () {
-    accordionBtn2.forEach((items)=>{
+accordionBtn2.forEach((item) => {
+  item.addEventListener('click', function () {
+    accordionBtn2.forEach((items) => {
       items.nextElementSibling.classList.remove('active');
       items.querySelector('svg').classList.remove('active');
     });
@@ -131,12 +145,37 @@ accordionBtn2.forEach((item)=>{
 
 //  product slider
 
-let smallImg=Array.from(document.getElementsByClassName('smallImgs'));
-let bigImg=document.getElementById('bigImg');
+let smallImg = Array.from(document.getElementsByClassName('smallImgs'));
+let bigImg = document.getElementById('bigImg');
 
-smallImg.forEach((item)=>{
-    item.addEventListener('click',function () {
-        let imgSrc=item.querySelector('img').src;
-        bigImg.src=imgSrc;
-    })
+smallImg.forEach((item) => {
+  item.addEventListener('click', function () {
+    let imgSrc = item.querySelector('img').src;
+    bigImg.src = imgSrc;
+  })
+})
+
+// fancybox
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
+
+// increase decrease input number
+
+let inputNumber=Array.from(document.getElementsByClassName('inputNumber'));
+let decrease=Array.from(document.getElementsByClassName('decrease'));
+let increase=Array.from(document.getElementsByClassName('increase'));
+
+decrease.forEach((item)=>{
+  item.addEventListener('click',function () {
+    if (item.nextElementSibling.value>1) {
+      item.nextElementSibling.value--;
+    }
+  })
+})
+increase.forEach((item)=>{
+  item.addEventListener('click',function () {
+    item.previousElementSibling.value++;
+  })
 })
