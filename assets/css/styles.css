@@ -51,7 +51,10 @@ a {
 .rounded-bl-0 {
     border-bottom-left-radius: 0px !important;
 }
-
+.rounded-l-53 {
+    border-bottom-left-radius: 53px !important;
+    border-top-left-radius: 53px !important;
+}
 .rounded-3 {
     border-radius: 3px;
 }
@@ -120,7 +123,9 @@ a {
 .rounded-45 {
     border-radius: 45px;
 }
-
+.rounded-53 {
+    border-radius: 53px;
+}
 .rounded-t-54 {
     border-radius: 54px 54px 0 0;
 }
@@ -782,7 +787,9 @@ a {
 .w-380 {
     width: 380px;
 }
-
+.w-405 {
+    width: 405px;
+}
 .w-452 {
     width: 452px;
 }
@@ -980,7 +987,9 @@ a {
 .h-344 {
     height: 344px;
 }
-
+.h-421 {
+    height: 421px;
+}
 .h-564 {
     height: 564px;
 }
@@ -1022,7 +1031,9 @@ a {
 .-mt-89 {
     margin-top: -89px;
 }
-
+.mt-100 {
+    margin-top: 100px;
+}
 .-mt-174 {
     margin-top: -174px;
 }
@@ -1032,6 +1043,9 @@ a {
 }
 
 /* margin bottom */
+.mb-84 {
+    margin-bottom: 84px;
+}
 .-mb-108 {
     margin-bottom: -108px;
 }
@@ -1367,21 +1381,6 @@ header .menu li>a.active path {
     -moz-transition: all 0.2s ease 0s;
 }
 
-footer {
-    background-image: url('../img/footerBg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.footerOverlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #1B0F00D1;
-    border-radius: 54px 54px 0 0;
-}
-
 @media only screen and (max-width:1400px) {
     .dropdown2>li:first-child::before {
         right: 239px;
@@ -1496,10 +1495,6 @@ footer {
 
     .right-lg-0 {
         right: 0;
-    }
-
-    footer {
-        padding-bottom: 206px !important;
     }
 }
 
@@ -1672,10 +1667,6 @@ footer {
 
     #myTabContent .tab-pane::before {
         display: none;
-    }
-
-    footer {
-        padding-bottom: 147px !important;
     }
 }
 
