@@ -268,7 +268,15 @@ a {
 }
 
 /* top */
-
+.-top-156 {
+    top: -156px;
+}
+.-top-143 {
+    top: -143px;
+}
+.-top-127 {
+    top: -127px;
+}
 .-top-103 {
     top: -103px;
 }
@@ -314,7 +322,9 @@ a {
 .-top-33 {
     top: -32.5px;
 }
-
+.-top-32 {
+    top: -32px;
+}
 .-top-27 {
     top: -27px;
 }
@@ -330,7 +340,9 @@ a {
 .-top-23 {
     top: -23px;
 }
-
+.-top-19 {
+    top: -19px;
+}
 .-top-17 {
     top: -17px;
 }
@@ -435,6 +447,9 @@ a {
 .left-20 {
     left: 20px;
 }
+.-left-30 {
+    left: -30px;
+}
 
 .-left-47 {
     left: -47px;
@@ -506,7 +521,9 @@ a {
 .bg-main-gradient5 {
     background-image: linear-gradient(to bottom, #fff6e9b5, #ffffff1a);
 }
-
+.bg-main-gradient6 {
+    background-image: linear-gradient(to top, #FFFAF5,#F4D285);
+}
 .bg-black {
     background-color: #242424;
 }
@@ -949,7 +966,9 @@ a {
 .h-104 {
     height: 104%;
 }
-
+.h-107 {
+    height: 107px;
+}
 .h-111 {
     height: 111%;
 }
@@ -1386,7 +1405,9 @@ header .menu li>a.active path {
     -webkit-transition: all 0.2s ease 0s;
     -moz-transition: all 0.2s ease 0s;
 }
-
+footer{
+    padding-bottom: 1.5rem;
+}
 @media only screen and (max-width:1400px) {
     .dropdown2>li:first-child::before {
         right: 239px;
@@ -1465,7 +1486,9 @@ header .menu li>a.active path {
     #customer {
         margin-top: 0;
     }
-
+    .position-xl-static {
+        position: static !important;
+    }
     .w-362 .-top-33 {
         top: -15.5px;
     }
@@ -1576,6 +1599,9 @@ header .menu li>a.active path {
     .rounded-lg-25{
         border-radius: 25px!important;
     }
+    .rounded-lg-54{
+        border-radius: 54px!important;
+    }
     .rounded-t-lg-25{
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
@@ -1611,7 +1637,7 @@ header .menu li>a.active path {
         margin-bottom: -466px;
     }
     footer{
-        background-color: #2d2d2d;
+        background-color: #292929;
     }
 }
 
@@ -1825,6 +1851,9 @@ header .menu li>a.active path {
 
     .lh-sm-26 {
         line-height: 26px;
+    }
+    footer{
+        padding-bottom: 169px!important;
     }
 }
 
