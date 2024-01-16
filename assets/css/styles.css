@@ -271,8 +271,8 @@ a {
 .-top-156 {
     top: -156px;
 }
-.-top-143 {
-    top: -143px;
+.-top-108 {
+    top: -108px;
 }
 .-top-127 {
     top: -127px;
@@ -1022,7 +1022,9 @@ a {
 .h-727 {
     height: 727px;
 }
-
+.h-935{
+    height: 935px;
+}
 /* font weight */
 .fw-300 {
     font-weight: 300;
@@ -1074,7 +1076,9 @@ a {
 .-mb-108 {
     margin-bottom: -108px;
 }
-
+.-mb-127{
+    margin-bottom: -127px;
+}
 .-mb-656 {
     margin-bottom: -656px;
 }
