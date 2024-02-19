@@ -280,7 +280,9 @@ a {
 .-top-103 {
     top: -103px;
 }
-
+.top-101{
+    top: 101px;
+}
 .-top-97 {
     top: -97px
 }
@@ -409,7 +411,9 @@ a {
 .right-53 {
     right: 53px;
 }
-
+.-right-82{
+    right: -82px;
+}
 .-right-119 {
     right: -119px;
 }
